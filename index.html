@@ -151,6 +151,62 @@
     letter-spacing: 0.8px;
 }
 
+.barcontainer {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+  min-height: 15vw;
+  max-height: 20vw;
+  min-width: 40%;
+  max-width: 60%;
+  z-index: 1;
+}
+
+.bar {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  border: 0px solid black;
+  border-radius: 2px 2px 0 0;
+  background: orange;
+  width: 20%;
+  text-align: center;
+  font-size: 10px;
+ 
+  
+}
+
+
+
+.bar:nth-child(1) {
+  left: 0%;
+}
+
+.bar:nth-child(2) {
+  left: 25%;
+}
+
+.bar:nth-child(3) {
+  left: 50%;
+}
+
+.bar:nth-child(4) {
+  left: 75%;
+}
+
+.bar:nth-child(5) {
+  left: 100%;
+}
+
+.bar:nth-child(6) {
+  left: 125%;
+}
+
+
+.tdc {
+
+    text-align: center;
+}
 
 
 </style>
@@ -205,7 +261,7 @@
   
 
                     <!-- text1 -->
-                    <p style="width:80%; margin-top: 20px; margin-bottom: 0px;"  data-value="80" >Text</p>
+                    <p style="width:80%; margin-top: 20px; margin-bottom: 0px;"  data-value="80" >Academics</p>
                     <progress max="100" value="80" class="text">
                     <div class="progress-bar">
                     <span style="width: 80%">80%</span>
@@ -213,10 +269,10 @@
                     </progress>
 
                     <!-- text2 -->
-                    <p style="width:80%; margin-top: 10px; margin-bottom: 0px;"  data-value="80" >Text</p>
-                    <progress max="100" value="80" class="text">
+                    <p style="width:80%; margin-top: 10px; margin-bottom: 0px;"  data-value="60" >Text</p>
+                    <progress max="100" value="60" class="text">
                     <div class="progress-bar">
-                    <span style="width: 80%">80%</span>
+                    <span style="width: 60%">60%</span>
                     </div>
                     </progress>
 
@@ -248,7 +304,9 @@
         </div>
 
         <div class="row core-section overview-section no-page-break">
-            <h2 class="strip">Semester Wise Analysis</h2>
+            
+            <h2 class="strip">Semester Wise Analysis <img src="https://s3.ap-south-1.amazonaws.com/frndzzy-website-new/images/White.png" align="right" style="height:35px; padding:10px;"></h2>
+            
             <div class="col-md-3 col-xs-4 chart-item">
                 <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 1</center></h4>
 
@@ -289,30 +347,35 @@
                 </figcaption>
                 </figure>
 
-                <svg width="250" height="100">
-                  <g transform="translate(40,20)">
-                  <g class="x axis" transform="translate(0,0)">
-                    <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                    </g>
-                  </g>
-                    <rect class="bar" x="10" width="31" y="20" height="50"></rect>
-                    <rect class="bar" x="44" width="31" y="10" height="60"></rect>
-                    <rect class="bar" x="78" width="31" y="40" height="30"></rect>
-                    <rect class="bar" x="112" width="31" y="30" height="40"></rect>
-                    <rect class="bar" x="146" width="31" y="20" height="50"></rect>
-                  </g>
-                </svg>
+     <!--Chart 1-->           
+<div class='barcontainer'>
+  
+  <div class='bar' style='height:42%;background: #FF0000;'>
+    
+   
+  </div>
+  <div class='bar' style='height: 56%;background: #06D6A0;'>
+
+    
+  </div>
+  <div class='bar' style='height: 62%;background: #118AB2;'>
+    
+    
+  </div>
+  <div class='bar' style='height:30%; background: #FFD166;'>
+    
+    
+  </div>
+  <div class='bar' style='height:75%; background:#EF476F'>
+    
+  
+  </div>
+ 
+</div>   
+
             </div>
             <div class="col-md-3 col-xs-4  chart-item">
-                <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 1</center></h4>
+                <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 2</center></h4>
 
                 <figure style="padding-left: 30px; font-size: 10px;">
                 <div class="figure-content">
@@ -351,30 +414,33 @@
                 </figcaption>
                 </figure>
 
-                <svg width="250" height="100">
-                  <g transform="translate(40,20)">
-                  <g class="x axis" transform="translate(0,0)">
-                    <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                    </g>
-                  </g>
-                    <rect class="bar" x="10" width="31" y="20" height="50"></rect>
-                    <rect class="bar" x="44" width="31" y="10" height="60"></rect>
-                    <rect class="bar" x="78" width="31" y="40" height="30"></rect>
-                    <rect class="bar" x="112" width="31" y="30" height="40"></rect>
-                    <rect class="bar" x="146" width="31" y="20" height="50"></rect>
-                  </g>
-                </svg>
+                <div class='barcontainer'>
+  
+  <div class='bar' style='height:42%;background: #FF0000;'>
+    
+   
+  </div>
+  <div class='bar' style='height: 56%;background: #06D6A0;'>
+
+    
+  </div>
+  <div class='bar' style='height: 62%;background: #118AB2;'>
+    
+    
+  </div>
+  <div class='bar' style='height:30%; background: #FFD166;'>
+    
+    
+  </div>
+  <div class='bar' style='height:75%; background:#EF476F'>
+    
+  
+  </div>
+ 
+</div>    
             </div>
             <div class="col-md-3 col-xs-4 chart-item">
-                <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 1</center></h4>
+                <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 3</center></h4>
 
                 <figure style="padding-left: 30px; font-size: 10px;">
                 <div class="figure-content">
@@ -413,30 +479,33 @@
                 </figcaption>
                 </figure>
 
-                <svg width="250" height="100">
-                  <g transform="translate(40,20)">
-                  <g class="x axis" transform="translate(0,0)">
-                    <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                    </g>
-                  </g>
-                    <rect class="bar" x="10" width="31" y="20" height="50"></rect>
-                    <rect class="bar" x="44" width="31" y="10" height="60"></rect>
-                    <rect class="bar" x="78" width="31" y="40" height="30"></rect>
-                    <rect class="bar" x="112" width="31" y="30" height="40"></rect>
-                    <rect class="bar" x="146" width="31" y="20" height="50"></rect>
-                  </g>
-                </svg>
+                <div class='barcontainer'>
+  
+  <div class='bar' style='height:42%;background: #FF0000;'>
+    
+   
+  </div>
+  <div class='bar' style='height: 56%;background: #06D6A0;'>
+
+    
+  </div>
+  <div class='bar' style='height: 62%;background: #118AB2;'>
+    
+    
+  </div>
+  <div class='bar' style='height:30%; background: #FFD166;'>
+    
+    
+  </div>
+  <div class='bar' style='height:75%; background:#EF476F'>
+    
+  
+  </div>
+ 
+</div>   
             </div>
             <div class="col-md-3 col-xs-4 chart-item">
-                <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 1</center></h4>
+                <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 4</center></h4>
 
                 <figure style="padding-left: 30px; font-size: 10px;">
                 <div class="figure-content">
@@ -475,30 +544,33 @@
                 </figcaption>
                 </figure>
 
-                <svg width="250" height="100">
-                  <g transform="translate(40,20)">
-                  <g class="x axis" transform="translate(0,0)">
-                    <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                    </g>
-                  </g>
-                    <rect class="bar" x="10" width="31" y="20" height="50"></rect>
-                    <rect class="bar" x="44" width="31" y="10" height="60"></rect>
-                    <rect class="bar" x="78" width="31" y="40" height="30"></rect>
-                    <rect class="bar" x="112" width="31" y="30" height="40"></rect>
-                    <rect class="bar" x="146" width="31" y="20" height="50"></rect>
-                  </g>
-                </svg>
+                <div class='barcontainer'>
+  
+  <div class='bar' style='height:42%;background: #FF0000;'>
+    
+   
+  </div>
+  <div class='bar' style='height: 56%;background: #06D6A0;'>
+
+    
+  </div>
+  <div class='bar' style='height: 62%;background: #118AB2;'>
+    
+    
+  </div>
+  <div class='bar' style='height:30%; background: #FFD166;'>
+    
+    
+  </div>
+  <div class='bar' style='height:75%; background:#EF476F'>
+    
+  
+  </div>
+ 
+</div>   
             </div>
             <div class="col-md-3 col-xs-4 chart-item">
-                <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 1</center></h4>
+                <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 5</center></h4>
 
                 <figure style="padding-left: 30px; font-size: 10px;">
                 <div class="figure-content">
@@ -537,30 +609,33 @@
                 </figcaption>
                 </figure>
 
-                <svg width="250" height="100">
-                  <g transform="translate(40,20)">
-                  <g class="x axis" transform="translate(0,0)">
-                    <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                    </g>
-                  </g>
-                    <rect class="bar" x="10" width="31" y="20" height="50"></rect>
-                    <rect class="bar" x="44" width="31" y="10" height="60"></rect>
-                    <rect class="bar" x="78" width="31" y="40" height="30"></rect>
-                    <rect class="bar" x="112" width="31" y="30" height="40"></rect>
-                    <rect class="bar" x="146" width="31" y="20" height="50"></rect>
-                  </g>
-                </svg>
+                <div class='barcontainer'>
+  
+  <div class='bar' style='height:42%;background: #FF0000;'>
+    
+   
+  </div>
+  <div class='bar' style='height: 56%;background: #06D6A0;'>
+
+    
+  </div>
+  <div class='bar' style='height: 62%;background: #118AB2;'>
+    
+    
+  </div>
+  <div class='bar' style='height:30%; background: #FFD166;'>
+    
+    
+  </div>
+  <div class='bar' style='height:75%; background:#EF476F'>
+    
+  
+  </div>
+ 
+</div>   
             </div>
             <div class="col-md-3 col-xs-4 chart-item">
-                <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 1</center></h4>
+                <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 6</center></h4>
 
                 <figure style="padding-left: 30px; font-size: 10px;">
                 <div class="figure-content">
@@ -599,30 +674,33 @@
                 </figcaption>
                 </figure>
 
-                <svg width="250" height="100">
-                  <g transform="translate(40,20)">
-                  <g class="x axis" transform="translate(0,0)">
-                    <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                    </g>
-                  </g>
-                    <rect class="bar" x="10" width="31" y="20" height="50"></rect>
-                    <rect class="bar" x="44" width="31" y="10" height="60"></rect>
-                    <rect class="bar" x="78" width="31" y="40" height="30"></rect>
-                    <rect class="bar" x="112" width="31" y="30" height="40"></rect>
-                    <rect class="bar" x="146" width="31" y="20" height="50"></rect>
-                  </g>
-                </svg>
+                            <div class='barcontainer'>
+  
+  <div class='bar' style='height:42%;background: #FF0000;'>
+    
+   
+  </div>
+  <div class='bar' style='height: 56%;background: #06D6A0;'>
+
+    
+  </div>
+  <div class='bar' style='height: 62%;background: #118AB2;'>
+    
+    
+  </div>
+  <div class='bar' style='height:30%; background: #FFD166;'>
+    
+    
+  </div>
+  <div class='bar' style='height:75%; background:#EF476F'>
+    
+  
+  </div>
+ 
+</div>   
             </div>
             <div class="col-md-3 col-xs-4 chart-item">
-                <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 1</center></h4>
+                <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 7</center></h4>
 
                 <figure style="padding-left: 30px; font-size: 10px;">
                 <div class="figure-content">
@@ -661,30 +739,36 @@
                 </figcaption>
                 </figure>
 
-                <svg width="250" height="100">
-                  <g transform="translate(40,20)">
-                  <g class="x axis" transform="translate(0,0)">
-                    <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                    </g>
-                  </g>
-                    <rect class="bar" x="10" width="31" y="20" height="50"></rect>
-                    <rect class="bar" x="44" width="31" y="10" height="60"></rect>
-                    <rect class="bar" x="78" width="31" y="40" height="30"></rect>
-                    <rect class="bar" x="112" width="31" y="30" height="40"></rect>
-                    <rect class="bar" x="146" width="31" y="20" height="50"></rect>
-                  </g>
-                </svg>
+                <div class='barcontainer'>
+  
+  <div class='bar' style='height:42%;background: #FF0000;'>
+    
+   
+  </div>
+  <div class='bar' style='height: 56%;background: #06D6A0;'>
+
+    
+  </div>
+  <div class='bar' style='height: 62%;background: #118AB2;'>
+    
+    
+  </div>
+  <div class='bar' style='height:30%; background: #FFD166;'>
+    
+    
+  </div>
+  <div class='bar' style='height:75%; background:#EF476F'>
+    
+  
+  </div>
+ 
+</div>   
+
+
+
             </div>
             <div class="col-md-3 col-xs-4 chart-item">
-                <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 1</center></h4>
+                <h4 class="section-content-title pb-0 mbr-fonts-style display-3"><center>Semester 8</center></h4>
 
                 <figure style="padding-left: 30px; font-size: 10px;">
                 <div class="figure-content">
@@ -723,608 +807,589 @@
                 </figcaption>
                 </figure>
 
-                <svg width="250" height="100">
-                  <g transform="translate(40,20)">
-                  <g class="x axis" transform="translate(0,0)">
-                    <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                    </g>
-                    <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                    </g>
-                  </g>
-                    <rect class="bar" x="10" width="31" y="20" height="50"></rect>
-                    <rect class="bar" x="44" width="31" y="10" height="60"></rect>
-                    <rect class="bar" x="78" width="31" y="40" height="30"></rect>
-                    <rect class="bar" x="112" width="31" y="30" height="40"></rect>
-                    <rect class="bar" x="146" width="31" y="20" height="50"></rect>
-                  </g>
-                </svg>
+                <div class='barcontainer'>
+  
+  <div class='bar' style='height:42%;background: #FF0000;'>
+    30%
+   
+  </div>
+  <div class='bar' style='height: 56%;background: #06D6A0;'>
+45%
+    
+  </div>
+  <div class='bar' style='height: 62%;background: #118AB2;'>
+    
+    55%
+  </div>
+  <div class='bar' style='height:30%; background: #FFD166;'>
+    66%
+    
+  </div>
+  <div class='bar' style='height:75%; background:#EF476F'>
+    
+  66%
+  </div>
+ 
+</div>     
             </div>
+
+        
         </div>
 
     <div class="row core-section no-page-break">
 
-         <h2 class="strip">Academics</h2>
+         <h2 class="strip">Academics <img src="https://s3.ap-south-1.amazonaws.com/frndzzy-website-new/images/White.png" align="right" style="height:35px; padding:10px;"></h2>
                 <div class="col-md-12">
 
-                    <style type="text/css">
-                        .tg  {border-collapse:collapse;border-spacing:0;border-color:#bbb;}
-                        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:#bbb;color:#594F4F;background-color:#E0FFEB;}
-                        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:#bbb;color:#493F3F;background-color:#9DE0AD;}
-                        .tg .tg-80ns{background-color:#C2FFD6;border-color:#000000;text-align:center}
-                        .tg .tg-fayj{font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;border-color:#000000;text-align:center}
-                        .tg .tg-eo34{background-color:#C2FFD6;border-color:inherit;text-align:center}
-                        .tg .tg-obcv{border-color:#000000;text-align:center}
-                        .tg .tg-l711{border-color:inherit}
-                        .tg .tg-rmb8{background-color:#C2FFD6;vertical-align:top}
-                        .tg .tg-gcw3{border-color:#000000}
-                        .tg .tg-kaky{background-color:#C2FFD6;border-color:inherit}
-                        .tg .tg-yw4l{vertical-align:top}
-                        .tg .tg-hsiy{background-color:#C2FFD6;border-color:#000000}
-                        .tg .tg-ugh9{background-color:#C2FFD6}
-                        </style>   
-        <table class="tg" align="center" style="undefined;table-layout: relative; width: 743px; ">
-                        <colgroup>
-                        <col style="width: 75.015625px">
-                        <col style="width: 57.015625px">
-                        <col style="width: 399.015625px">
-                        <col style="width: 69.015625px">
-                        <col style="width: 74.015625px">
-                        <col style="width: 69.015625px">
-                        </colgroup>
-                          <tr>
-                            <th class="tg-gcw3"></th>
-                            <th class="tg-obcv"><span style="font-weight:bold">SEM1</span><br></th>
-                            <th class="tg-fayj"><span style="font-weight:bold">Subject Name</span></th>
-                            <th class="tg-obcv"><span style="font-weight:bold">Internals</span></th>
-                            <th class="tg-obcv"><span style="font-weight:bold">Externals</span></th>
-                            <th class="tg-obcv"><span style="font-weight:bold">Total</span></th>
-                          </tr>
-                          <tr>
-                            <td class="tg-obcv" rowspan="16"><span style="font-weight:bold">Year I</span></td>
-                            <td class="tg-eo34" rowspan="8"><span style="font-weight:bold">SEM 1</span></td>
-                            <td class="tg-l711"></td>
-                            <td class="tg-kaky"></td>
-                            <td class="tg-l711"></td>
-                            <td class="tg-kaky"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-l711"></td>
-                            <td class="tg-kaky"></td>
-                            <td class="tg-l711"></td>
-                            <td class="tg-kaky"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-l711"></td>
-                            <td class="tg-kaky"></td>
-                            <td class="tg-l711"></td>
-                            <td class="tg-kaky"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-l711"></td>
-                            <td class="tg-kaky"></td>
-                            <td class="tg-l711"></td>
-                            <td class="tg-kaky"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-l711"></td>
-                            <td class="tg-kaky"></td>
-                            <td class="tg-l711"></td>
-                            <td class="tg-kaky"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-yw4l"></td>
-                            <td class="tg-rmb8"></td>
-                            <td class="tg-yw4l"></td>
-                            <td class="tg-rmb8"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-l711"></td>
-                            <td class="tg-kaky"></td>
-                            <td class="tg-l711"></td>
-                            <td class="tg-kaky"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-80ns" rowspan="8"><span style="font-weight:bold">SEM2</span></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-obcv" rowspan="16"><span style="font-weight:bold">Year II</span></td>
-                            <td class="tg-80ns" rowspan="8"><span style="font-weight:bold">SEM1</span></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-80ns" rowspan="8"><span style="font-weight:bold">SEM2</span></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-obcv" rowspan="16"><span style="font-weight:bold">Year III</span></td>
-                            <td class="tg-80ns" rowspan="8"><span style="font-weight:bold">SEM1</span></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-80ns" rowspan="8"><span style="font-weight:bold">SEM2</span></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-obcv" rowspan="17"><span style="font-weight:bold">Year IV</span></td>
-                            <td class="tg-80ns" rowspan="8"><span style="font-weight:bold">SEM1</span></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-80ns" rowspan="9"><span style="font-weight:bold">SEM2</span></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                            <td class="tg-031e"></td>
-                            <td class="tg-ugh9"></td>
-                          </tr>
-                          <tr>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                            <td class="tg-gcw3"></td>
-                            <td class="tg-hsiy"></td>
-                          </tr>
-                        </table>
-     
+              <table  style="undefined;table-layout: relative; width: 743px;" align="center" cellspacing="2" border="0"><colgroup> <col style="width: 75.015625px;background-color: #A4AEC1;"> <col style="width: 57.015625px;background-color: #BFDBD5;"> <col style="width: 399.015625px;background-color: #D4E7E3;"> <col style="width: 69.015625px;background-color: #DFEDEA;"> <col style="width: 74.015625px;background-color: #E9F3F1;"> <col style="width: 69.015625px;background-color: #E9F3F1;"> </colgroup>
+                <tbody>
+                <tr style="height: 36px;background-color: #65607B;color: white;">
+                <th style="height: 26px width: 74px; text-align: center;">Year</th>
+                <th  style="height: 26px width: 57px;text-align: center;">Sem</th>
+                <th  style="height: 26px width: 394px;text-align: center;"><span style="font-weight: bold;">Subject Name</span></th>
+                <th  style="height: 26px width: 69px;text-align: center;"><span style="font-weight: bold;">Internals</span></th>
+                <th  style="height: 26px width: 74px;text-align: center;"><span style="font-weight: bold;">Externals</span></th>
+                <th  style="height: 26px width: 69px;text-align: center;"><span style="font-weight: bold;">Total</span></th>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 369px; width: 74px;text-align: center;" rowspan="16"><span style="font-weight: bold;">Year I</span></td>
+                <td  style="height: 185px; width: 57px;text-align: center;" rowspan="8"><span style="font-weight: bold;">SEM 1</span></td>
+                <td  style="height: 26px width: 394px;">&nbsp;English</td>
+                <td  style="height: 26px width: 69px;">&nbsp;20</td>
+                <td  style="height: 26px width: 74px;">&nbsp;45</td>
+                <td  style="height: 26px width: 69px;">65</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Mathematical Methods</td>
+                <td  style="height: 26px width: 69px;">&nbsp;19</td>
+                <td  style="height: 26px width: 74px;">&nbsp;46</td>
+                <td  style="height: 26px width: 69px;">65</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Mathematics 1</td>
+                <td  style="height: 26px width: 69px;">&nbsp;18</td>
+                <td  style="height: 26px width: 74px;">&nbsp;52</td>
+                <td  style="height: 26px width: 69px;">&nbsp;75</td>
+                </tr>
+                <tr style="height: 24px;">
+                <td  style="height: 24px; width: 394px;">&nbsp;Engineering Physics</td>
+                <td  style="height: 24px; width: 69px;">&nbsp;21</td>
+                <td  style="height: 24px; width: 74px;">&nbsp;65</td>
+                <td  style="height: 24px; width: 69px;">&nbsp;58</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Engineering Chemistry</td>
+                <td  style="height: 26px width: 69px;">&nbsp;23</td>
+                <td  style="height: 26px width: 74px;">&nbsp;71</td>
+                <td  style="height: 26px width: 69px;">&nbsp;99</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Computer Programming &amp; Data Structures</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                <td  style="height: 26px width: 74px;">&nbsp;73</td>
+                <td  style="height: 26px width: 69px;">&nbsp;88</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Computer Programming LAB</td>
+                <td  style="height: 26px width: 69px;">&nbsp;20</td>
+                <td  style="height: 26px width: 74px;">&nbsp;75</td>
+                <td  style="height: 26px width: 69px;">&nbsp;75</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;English Communication Skills LAB</td>
+                <td  style="height: 26px width: 69px;">&nbsp;16</td>
+                <td  style="height: 26px width: 74px;">&nbsp;59</td>
+                <td  style="height: 26px width: 69px;">&nbsp;58</td>
+                </tr>
+                <tr style="height: 26px">
+                <td style="height: 184px; width: 57px;text-align: center;" rowspan="8"><span style="font-weight: bold;">SEM 2</span></td>
+                <td style="height: 26px width: 394px;">&nbsp;IT Workshop &amp; Engineering Workshop</td>
+                <td  style="height: 26px width: 69px;">&nbsp;15</td>
+                <td  style="height: 26px width: 74px;">&nbsp;56</td>
+                <td  style="height: 26px width: 69px;">&nbsp;45</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Mathematical Methods</td>
+                <td  style="height: 26px width: 69px;">&nbsp;18</td>
+                <td  style="height: 26px width: 74px;">&nbsp;53</td>
+                <td  style="height: 26px width: 69px;">&nbsp;58</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Mathematics 1</td>
+                <td  style="height: 26px width: 69px;">&nbsp;12</td>
+                <td  style="height: 26px width: 74px;">&nbsp;44</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Engineering Physics</td>
+                <td  style="height: 26px width: 69px;">&nbsp;15</td>
+                <td  style="height: 26px width: 74px;">&nbsp;42</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Engineering Chemistry</td>
+                <td  style="height: 26px width: 69px;">&nbsp;19</td>
+                <td  style="height: 26px width: 74px;">&nbsp;50</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Computer Programming &amp; Data Structures</td>
+                <td  style="height: 26px width: 69px;">&nbsp;23</td>
+                <td  style="height: 26px width: 74px;">&nbsp;60</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Engineering Drawing</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                <td  style="height: 26px width: 74px;">&nbsp;70</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;ENGG Physics &amp; ENGG Chemistry Lab</td>
+                <td  style="height: 26px width: 69px;">&nbsp;23</td>
+                <td  style="height: 26px width: 74px;">&nbsp;50</td>
+                <td style="height: 26px width: 69px;">&nbsp;25</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 368px; width: 74px;text-align: center;" rowspan="16"><span style="font-weight: bold;">Year II</span></td>
+                <td  style="height: 184px; width: 57px;text-align: center;" rowspan="8"><span style="font-weight: bold;">SEM 1</span></td>
+                <td  style="height: 26px width: 394px;">&nbsp;Data Communication System</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                <td  style="height: 26px width: 74px;">&nbsp;20</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Mathematical Fountication of Computer Science</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                <td  style="height: 26px width: 74px;">&nbsp;28</td>
+                <td  style="height: 26px width: 69px;">&nbsp;85</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Data Structures Through C++</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                <td  style="height: 26px width: 74px;">&nbsp;32</td>
+                <td  style="height: 26px width: 69px;">&nbsp;85</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Digital Logic Design &amp; Computer Organization</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                <td  style="height: 26px width: 74px;">&nbsp;33</td>
+                <td  style="height: 26px width: 69px;">&nbsp;85</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Electronic Device &amp; Circuits</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                <td  style="height: 26px width: 74px;">&nbsp;35</td>
+                <td  style="height: 26px width: 69px;">&nbsp;85</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Basic Electrical ENGG</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                <td  style="height: 26px width: 74px;">&nbsp;36</td>
+                <td  style="height: 26px width: 69px;">&nbsp;75</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Electrical &amp; Electronics LAB</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                <td  style="height: 26px width: 74px;">&nbsp;38</td>
+                <td  style="height: 26px width: 69px;">&nbsp;58</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Data Structures Lab Through C++</td>
+                <td  style="height: 26px width: 69px;">&nbsp;24</td>
+                <td  style="height: 26px width: 74px;">&nbsp;38</td>
+                <td  style="height: 26px width: 69px;">&nbsp;69</td>
+                </tr>
+                <tr style="height: 26px">
+                <td style="height: 184px; width: 57px;text-align: center;" rowspan="8"><span style="font-weight: bold;text-align: center;">SEM 2</span></td>
+                <td  style="height: 26px width: 394px;">&nbsp;Principles of Programming Language</td>
+                <td  style="height: 26px width: 69px;">&nbsp;24</td>
+                <td  style="height: 26px width: 74px;">&nbsp;38</td>
+                <td  style="height: 26px width: 69px;">&nbsp;74</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Database Management System</td>
+                <td  style="height: 26px width: 69px;">&nbsp;24</td>
+                <td  style="height: 26px width: 74px;">&nbsp;35</td>
+                <td  style="height: 26px width: 69px;">&nbsp;47</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Object Oriented Programming</td>
+                <td  style="height: 26px width: 69px;">&nbsp;24</td>
+                <td  style="height: 26px width: 74px;">&nbsp;39</td>
+                <td  style="height: 26px width: 69px;">&nbsp;85</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Environmental Studies</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                <td  style="height: 26px width: 74px;">&nbsp;75</td>
+                <td  style="height: 26px width: 69px;">&nbsp;95</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Probability&nbsp; &amp; Statistics</td>
+                <td  style="height: 26px width: 69px;">&nbsp;23</td>
+                <td  style="height: 26px width: 74px;">&nbsp;45</td>
+                <td  style="height: 26px width: 69px;">&nbsp;75</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Design &amp; Analysis of Algorithms</td>
+                <td  style="height: 26px width: 69px;">&nbsp;23</td>
+                <td  style="height: 26px width: 74px;">&nbsp;35</td>
+                <td  style="height: 26px width: 69px;">&nbsp;85</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Object Oriented Programming LAB</td>
+                <td  style="height: 26px width: 69px;">&nbsp;23</td>
+                <td  style="height: 26px width: 74px;">&nbsp;25</td>
+                <td  style="height: 26px width: 69px;">&nbsp;88</td>
+                </tr>
+                <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;Database Management System LAB</td>
+                <td  style="height: 26px width: 69px;">&nbsp;25</td>
+                <td  style="height: 26px width: 74px;">&nbsp;15</td>
+                <td style="height: 26px width: 69px;">&nbsp;76</td>
+                </tr>
+
+              </tbody></table>
+
+
+                    
+</div>
+        <div class="row core-section no-page-break">
+      
+        <div class="col-md-12 ">
+        <h2 class="strip">Academics <img src="https://s3.ap-south-1.amazonaws.com/frndzzy-website-new/images/White.png" align="right" style="height:35px; padding:10px;"></h2>
+              <table  style="undefined;table-layout: relative; width: 743px;" align="center" cellspacing="2" border="0"><colgroup> <col style="width: 75.015625px;background-color: #A4AEC1;"> <col style="width: 57.015625px;background-color: #BFDBD5;"> <col style="width: 399.015625px;background-color: #D4E7E3;"> <col style="width: 69.015625px;background-color: #DFEDEA;"> <col style="width: 74.015625px;background-color: #E9F3F1;"> <col style="width: 69.015625px;background-color: #E9F3F1;"> </colgroup>
+                <tbody>
+                <tr style="height: 36px;background-color: #65607B;color: white;">
+                <th style="height: 26px width: 74px; text-align: center;">Year</th>
+                <th  style="height: 26px width: 57px;text-align: center;">Sem</th>
+                <th  style="height: 26px width: 394px;text-align: center;"><span style="font-weight: bold;">Subject Name</span></th>
+                <th  style="height: 26px width: 69px;text-align: center;"><span style="font-weight: bold;">Internals</span></th>
+                <th  style="height: 26px width: 74px;text-align: center;"><span style="font-weight: bold;">Externals</span></th>
+                <th  style="height: 26px width: 69px;text-align: center;"><span style="font-weight: bold;">Total</span></th>
+                </tr>
+                <tr style="height: 23px;">
+                <td style="height: 364px; width: 74px;text-align: center;" rowspan="16"><span style="font-weight: bold;">Year III</span></td>
+                <td style="height: 184px; width: 57px;text-align: center;" rowspan="8"><span style="font-weight: bold;">SEM 1</span></td>
+                <td  style="height: 23px; width: 394px;">&nbsp;Automata &amp; Compiler Design</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;21</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;52</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;37</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Linux Programming</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;12</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;53</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;72</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Software Engineering</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;25</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;56</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;71</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Operating System</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;13</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;58</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;78</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Computer Networks</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;25</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;56</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;82</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Managerial Economics and Financial Analysis</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;11</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;58</td>
+                <td style="height: 23px; width: 69px;">&nbsp;83</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Operating System &amp; Computer Networks&nbsp; LAB</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;13</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;56</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;93</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Advance English Communication Skills Lab</td>
+                <td style="height: 23px; width: 69px;">&nbsp;24</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;58</td>
+                <td style="height: 23px; width: 69px;">&nbsp;78</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 180px; width: 57px;text-align: center;" rowspan="8"><span style="font-weight: bold;">SEM 2</span></td>
+                <td  style="height: 23px; width: 394px;">&nbsp;Embedded System</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;21</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;54</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;85</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Network Security</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;23</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;65</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;85</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Data Warehouse and Data Mining</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;25</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;65</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;68</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Web Technologies</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;12</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;52</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;86</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Operation Research</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;18</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;56</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;86</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Computer Graphics</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;12</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;63</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;85</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Embedded System and Data Mining LAB</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;13</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;61</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;47</td>
+                </tr>
+                <tr style="height: 19px;">
+                <td  style="height: 19px; width: 394px;">&nbsp;Web Technologies LAB</td>
+                <td style="height: 19px; width: 69px;">&nbsp;18</td>
+                <td  style="height: 19px; width: 74px;">&nbsp;53</td>
+                <td style="height: 19px; width: 69px;">&nbsp;58</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 391px; width: 74px;text-align: center;" rowspan="17"><span style="font-weight: bold;">Year IV</span></td>
+                <td  style="height: 184px; width: 57px;text-align: center;" rowspan="8"><span style="font-weight: bold;">SEM 1</span></td>
+                <td  style="height: 23px; width: 394px;">&nbsp;Object Oriented Analysis and Design</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;25</td>
+                <td style="height: 23px; width: 74px;">&nbsp;75</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;68</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Human Computer Interaction</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;23</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;74</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;68</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Software Testing Methodologies</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;24</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;72</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;47</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Mobile Application Development</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;23</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;72</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;86</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;VLSI Design</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;23</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;62</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;58</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Semantic Web and Social Networks</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;21</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;63</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;86</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Case Tools and Software Testing LAB</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;23</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;63</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;68</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Mobile Application Development LAB</td>
+                <td style="height: 23px; width: 69px;">&nbsp;21</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;61</td>
+                <td style="height: 23px; width: 69px;">&nbsp;74</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 207px; width: 57px;text-align: center;" rowspan="9"><span style="font-weight: bold;">SEM 2</span></td>
+                <td  style="height: 23px; width: 394px;">&nbsp;Management Science</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;23</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;67</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;58</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;E-Commerce&nbsp;</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;23</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;69</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;25</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Design Patterns</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;25</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;68</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;35</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Industry Oriented Mini Project</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;23</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;64</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;85</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Seminar</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;21</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;65</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;63</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Project Work</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;21</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;65</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;72</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Comprehensive VIVA</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;21</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;64</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;58</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Semantic Web and Social Networks</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;21</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;53</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;58</td>
+                </tr>
+                <tr style="height: 23px;">
+                <td  style="height: 23px; width: 394px;">&nbsp;Semantic Web and Social Networks</td>
+                <td style="height: 23px; width: 69px;">&nbsp;21</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;53</td>
+                <td style="height: 23px; width: 69px;">&nbsp;58</td>
+                </tr>
+                </tbody>
+                </table>
         <br>
         <p class="margin"><strong>Description:</strong></br>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum<br><br>
         </p>
         </div>
             </div>
+        </div>
             <div class="row no-page-break">
-                <h2 class="strip">Year Wise Analysis</h2>
-                <div class="row core-section margin">
+                <h2 class="strip">Year Wise Analysis<img src="https://s3.ap-south-1.amazonaws.com/frndzzy-website-new/images/White.png" align="right" style="height:35px; padding:10px;"></h2>
+                <div class="row core-section-1 margin">
                     <div class="col-md-6 col-xs-6">
                         <h3 class="section-content-title pb-0 align-left mbr-fonts-style display-3" style="margin-top: 0px; margin-bottom: 0px;">First Year</h3>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
 
                     </div>
                     <div class="col-md-3 col-xs-4">
-                        <svg width="250" height="100">
-                          <g transform="translate(15,20)">
-                          <g class="x axis" transform="translate(0,0)">
-                          <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                          </g>
-                          </g>
-                          <rect class="bar" x="0" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="40" width="31" y="10" height="60"></rect>
-                          <rect class="bar" x="80" width="31" y="40" height="30"></rect>
-                          <rect class="bar" x="120" width="31" y="30" height="40"></rect>
-                          <rect class="bar" x="160" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="200" width="31" y="20" height="50"></rect>
-                          </g>
-                        </svg>
+                        <div class='barcontainer'>
+  
+                      <div class='bar' style='height:42%;background: #FF0000;'>
+                        
+                       
+                      </div>
+                      <div class='bar' style='height: 56%;background: #06D6A0;'>
+
+                        
+                      </div>
+                      <div class='bar' style='height: 62%;background: #118AB2;'>
+                        
+                        
+                      </div>
+                      <div class='bar' style='height:30%; background: #FFD166;'>
+                        
+                        
+                      </div>
+                      <div class='bar' style='height:75%; background:#EF476F'>
+                        
+                      
+                      </div>
+                      <div class='bar' style='height:65%; background:#7A5100'>
+                                
+                              
+                              </div>
+                     
+</div>   
 
                     </div>
                     <div class="col-md-3 col-xs-4">
-                        <svg width="250" height="100">
-                          <g transform="translate(15,20)">
-                          <g class="x axis" transform="translate(0,0)">
-                          <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                          </g>
-                          </g>
-                          <rect class="bar" x="0" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="40" width="31" y="10" height="60"></rect>
-                          <rect class="bar" x="80" width="31" y="40" height="30"></rect>
-                          <rect class="bar" x="120" width="31" y="30" height="40"></rect>
-                          <rect class="bar" x="160" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="200" width="31" y="20" height="50"></rect>
-                          </g>
-                        </svg>
+                        <div class='barcontainer'>
+  
+                              <div class='bar' style='height:42%;background: #FF0000;'>
+                              </div>
+                              <div class='bar' style='height: 56%;background: #06D6A0;'>
+                              </div>
+                              <div class='bar' style='height: 62%;background: #118AB2;'>
+                              </div>
+                              <div class='bar' style='height:30%; background: #FFD166;'>
+                              </div>
+                              <div class='bar' style='height:75%; background:#EF476F'>
+                               </div>
+                              <div class='bar' style='height:65%; background:#7A5100'>
+                              </div>
+                             
+                        </div>   
 
                     </div>
                 
                 </div>
 
-                <div class="row core-section margin">
+                <div class="row core-section-1 margin">
 
+                <div class="col-md-6 col-xs-6"> 
+                    <table class="" style=" width: 240px;" >
+                        <tr>
+                            <td>
+                        <div class='barcontainer'>
+  
+                      <div class='bar' style='height:42%;background: #FF0000;'>
+                      </div>
+                      <div class='bar' style='height: 56%;background: #06D6A0;'>
+                      </div>
+                      <div class='bar' style='height: 62%;background: #118AB2;'>
+                      </div>
+                      <div class='bar' style='height:30%; background: #FFD166;'>
+                      </div>
+                      <div class='bar' style='height:75%; background:#EF476F'>
+                      </div>
+                      <div class='bar' style='height:65%; background:#7A5100'>
+                      </div>
+                     
+                    </div>   
+                    </td>
+                        </tr>
+                    
 
-                    <div class="col-md-3 col-xs-6">
-
-                        <table>
-                            <tr>
-                                <td>
-                                    <svg width="250" height="100">
-                        <g transform="translate(15,20)">
-                        <g class="x axis" transform="translate(0,0)">
-                        <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                        </g>
-                        </g>
-                        <rect class="bar" x="0" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="40" width="31" y="10" height="60"></rect>
-                          <rect class="bar" x="80" width="31" y="40" height="30"></rect>
-                          <rect class="bar" x="120" width="31" y="30" height="40"></rect>
-                          <rect class="bar" x="160" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="200" width="31" y="20" height="50"></rect>
-                        </g>
-                        </svg>
-                                </td>
-
-                                <tr>
-                                    <td>
-
-                                        <svg width="250" height="100">
-                        <g transform="translate(15,20)">
-                        <g class="x axis" transform="translate(0,0)">
-                        <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                        </g>
-                        </g>
-                       <rect class="bar" x="0" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="40" width="31" y="10" height="60"></rect>
-                          <rect class="bar" x="80" width="31" y="40" height="30"></rect>
-                          <rect class="bar" x="120" width="31" y="30" height="40"></rect>
-                          <rect class="bar" x="160" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="200" width="31" y="20" height="50"></rect>
-                        </g>
-                        </svg>
-
-                                    </td>
-
-                                 </tr>
-                                 
-                         </table>           
-
-
-                     </div>
-
-                        
-      
+                        <tr>
+                            <td>
+                        <div class='barcontainer' >
+  
+                      <div class='bar' style='height:42%;background: #FF0000;'>
+                      </div>
+                      <div class='bar' style='height: 56%;background: #06D6A0;'>
+                      </div>
+                      <div class='bar' style='height: 62%;background: #118AB2;'>
+                      </div>
+                      <div class='bar' style='height:30%; background: #FFD166;'>
+                      </div>
+                      <div class='bar' style='height:75%; background:#EF476F'>
+                      </div>
+                      <div class='bar' style='height:65%; background:#7A5100'>
+                      </div>
+                     
+                    </div>   
+                </td></tr>
+                 </table>
+                </div>
                     <div class="col-md-6 col-xs-6"> 
                      
                         
@@ -1338,132 +1403,125 @@
                     </div>
                     </div>
 
-            <div class="row core-section margin">
+            <div class="row core-section-1 margin">
                     <div class="col-md-6 col-xs-6">
                         <h3 class="section-content-title pb-0 align-left mbr-fonts-style display-3" style="margin-top: 0px; margin-bottom: 0px;">First Year</h3>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
 
                     </div>
                     <div class="col-md-3 col-xs-4">
-                        <svg width="250" height="100">
-                          <g transform="translate(15,20)">
-                          <g class="x axis" transform="translate(0,0)">
-                          <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                          </g>
-                          </g>
-                          <rect class="bar" x="0" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="40" width="31" y="10" height="60"></rect>
-                          <rect class="bar" x="80" width="31" y="40" height="30"></rect>
-                          <rect class="bar" x="120" width="31" y="30" height="40"></rect>
-                          <rect class="bar" x="160" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="200" width="31" y="20" height="50"></rect>
-                          </g>
-                        </svg>
+                <div class='barcontainer'>
+  
+                      <div class='bar' style='height:42%;background: #FF0000;'>
+                        
+                       
+                      </div>
+                      <div class='bar' style='height: 56%;background: #06D6A0;'>
+
+                        
+                      </div>
+                      <div class='bar' style='height: 62%;background: #118AB2;'>
+                        
+                        
+                      </div>
+                      <div class='bar' style='height:30%; background: #FFD166;'>
+                        
+                        
+                      </div>
+                      <div class='bar' style='height:75%; background:#EF476F'>
+                        
+                      
+                      </div>
+                      <div class='bar' style='height:65%; background:#7A5100'>
+                                
+                              
+                    </div>
+                     
+                </div>   
 
                     </div>
                     <div class="col-md-3 col-xs-4">
-                        <svg width="250" height="100">
-                          <g transform="translate(15,20)">
-                          <g class="x axis" transform="translate(0,0)">
-                          <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                          </g>
-                          <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                          </g>
-                          </g>
-                          <rect class="bar" x="0" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="40" width="31" y="10" height="60"></rect>
-                          <rect class="bar" x="80" width="31" y="40" height="30"></rect>
-                          <rect class="bar" x="120" width="31" y="30" height="40"></rect>
-                          <rect class="bar" x="160" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="200" width="31" y="20" height="50"></rect>
-                          </g>
-                        </svg>
+                        <div class='barcontainer'>
+  
+                      <div class='bar' style='height:42%;background: #FF0000;'>
+                        
+                       
+                      </div>
+                      <div class='bar' style='height: 56%;background: #06D6A0;'>
+
+                        
+                      </div>
+                      <div class='bar' style='height: 62%;background: #118AB2;'>
+                        
+                        
+                      </div>
+                      <div class='bar' style='height:30%; background: #FFD166;'>
+                        
+                        
+                      </div>
+                      <div class='bar' style='height:75%; background:#EF476F'>
+                        
+                      
+                      </div>
+                      <div class='bar' style='height:65%; background:#7A5100'>
+                                
+                              
+                              </div>
+                     
+</div>   
 
                     </div>
                 
                 </div>
 
-                <div class="row core-section margin">
+                <div class="row core-section-1 margin">
 
 
-                    <div class="col-md-3 col-xs-6">
+                    <div class="col-md-6 col-xs-6"> 
+                    <table class="" style=" width: 240px;" >
+                        <tr>
+                            <td>
+                        <div class='barcontainer'>
+  
+                      <div class='bar' style='height:42%;background: #FF0000;'>
+                      </div>
+                      <div class='bar' style='height: 56%;background: #06D6A0;'>
+                      </div>
+                      <div class='bar' style='height: 62%;background: #118AB2;'>
+                      </div>
+                      <div class='bar' style='height:30%; background: #FFD166;'>
+                      </div>
+                      <div class='bar' style='height:75%; background:#EF476F'>
+                      </div>
+                      <div class='bar' style='height:65%; background:#7A5100'>
+                      </div>
+                     
+                    </div>   
+                    </td>
+                        </tr>
+                    
 
-                        <table>
-                            <tr>
-                                <td>
-                                    <svg width="250" height="100">
-                        <g transform="translate(15,20)">
-                        <g class="x axis" transform="translate(0,0)">
-                        <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                        </g>
-                        </g>
-                        <rect class="bar" x="0" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="40" width="31" y="10" height="60"></rect>
-                          <rect class="bar" x="80" width="31" y="40" height="30"></rect>
-                          <rect class="bar" x="120" width="31" y="30" height="40"></rect>
-                          <rect class="bar" x="160" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="200" width="31" y="20" height="50"></rect>
-                        </g>
-                        </svg>
-                                </td>
-
-                                <tr>
-                                    <td>
-
-                                        <svg width="250" height="100">
-                        <g transform="translate(15,20)">
-                        <g class="x axis" transform="translate(0,0)">
-                        <g class="tick" transform="translate(25.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(59.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(93.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(127.5,0)" style="opacity: 1;">
-                        </g>
-                        <g class="tick" transform="translate(161.5,0)" style="opacity: 1;">
-                        </g>
-                        </g>
-                       <rect class="bar" x="0" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="40" width="31" y="10" height="60"></rect>
-                          <rect class="bar" x="80" width="31" y="40" height="30"></rect>
-                          <rect class="bar" x="120" width="31" y="30" height="40"></rect>
-                          <rect class="bar" x="160" width="31" y="20" height="50"></rect>
-                          <rect class="bar" x="200" width="31" y="20" height="50"></rect>
-                        </g>
-                        </svg>
-
-                                    </td>
-
-                                 </tr>
-                                 
-                         </table>           
-
-
-                     </div>
-
+                        <tr>
+                            <td>
+                        <div class='barcontainer'>
+  
+                      <div class='bar' style='height:42%;background: #FF0000;'>
+                      </div>
+                      <div class='bar' style='height: 56%;background: #06D6A0;'>
+                      </div>
+                      <div class='bar' style='height: 62%;background: #118AB2;'>
+                      </div>
+                      <div class='bar' style='height:30%; background: #FFD166;'>
+                      </div>
+                      <div class='bar' style='height:75%; background:#EF476F'>
+                      </div>
+                      <div class='bar' style='height:65%; background:#7A5100'>
+                      </div>
+                     
+                    </div>   
+                </td></tr>
+                 </table>
+                </div>
                         
       
                     <div class="col-md-6 col-xs-6"> 
@@ -1482,7 +1540,7 @@
             </div>
                 <!-- containter end-->
                     <div class="row core-section-1 no-page-break">
-                        <h2 class="strip">Technology Engagement:</h2></br>
+                        <h2 class="strip">Technology Engagement <img src="https://s3.ap-south-1.amazonaws.com/frndzzy-website-new/images/White.png" align="right" style="height:35px; padding:10px;"></h2>
                                 <div class="col-md-6 col-xs-6">
                                             <style>
                                             .chart {
@@ -1609,27 +1667,29 @@
                       </div>
 
                 <div class="col-md-3 col-xs-3" >
-                      <svg width="250" height="200">
-                      <g transform="translate(0,20)">
-                      <g class="x axis" transform="translate(0,0)">
-                      <g class="tick" transform="translate(0,25.5)" style="opacity: 1;">
-                      </g>
-                      <g class="tick" transform="translate(0,59.5)" style="opacity: 1;">
-                      </g>
-                      <g class="tick" transform="translate(0,93.5)" style="opacity: 1;">
-                      </g>
-                      <g class="tick" transform="translate(0,127.5)" style="opacity: 1;">
-                      </g>
-                      <g class="tick" transform="translate(0,161.5)" style="opacity: 1;">
-                      </g>
-                      </g>
-                      <rect class="bar" x="0" width="25" y="10" height="110"></rect>
-                      <rect class="bar" x="30" width="25" y="30" height="90"></rect>
-                      <rect class="bar" x="60" width="25" y="40" height="80"></rect>
-                      <rect class="bar" x="90" width="25" y="20" height="100"></rect>
-                      <rect class="bar" x="120" width="25" y="50" height="70"></rect>
-                      </g>
-                      </svg>
+<div class='barcontainer' style="
+    margin-left: inherit;">
+  
+                      <div class='bar' style='height:42%;background: #FF0000;'>
+                        
+                      </div>
+                      <div class='bar' style='height: 56%;background: #06D6A0;'>
+
+                      </div>
+                      <div class='bar' style='height: 62%;background: #118AB2;'>
+                        
+                      </div>
+                      <div class='bar' style='height:30%; background: #FFD166;'>
+                        
+                      </div>
+                      <div class='bar' style='height:75%; background:#EF476F'>
+                        
+                      </div>
+                      <div class='bar' style='height:65%; background:#7A5100'>
+                              
+                    </div>
+                     
+                </div>   
 
 
 
@@ -1648,32 +1708,21 @@
 
                             <h3 class="text-center">Technology Utilization:</h3>
                             
-                        <style type="text/css">
-                            .tg  {border-collapse:collapse;border-spacing:0;border-color:#bbb;}
-                            .tg td{font-family:Arial, sans-serif;font-size:14px;padding:2px 1px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#bbb;color:#594F4F;background-color:#E0FFEB;}
-                            .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:2px 1px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#bbb;color:#493F3F;background-color:#9DE0AD;}
-                            .tg .tg-eo34{background-color:#C2FFD6;border-color:inherit;text-align:center}
-                            .tg .tg-uys7{border-color:inherit;text-align:center}
-                            .tg .tg-z72n{background-color:#C2FFD6;font-weight:bold;border-color:inherit;text-align:center}
-                            </style>
+                        
                           <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;border-color:#bbb;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:2px 1px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#bbb;color:#594F4F;background-color:#E0FFEB;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:2px 1px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#bbb;color:#493F3F;background-color:#9DE0AD;}
-.tg .tg-eo34{background-color:#C2FFD6;border-color:inherit;text-align:center}
-.tg .tg-uys7{border-color:inherit;text-align:center}
-.tg .tg-z72n{background-color:#C2FFD6;font-weight:bold;border-color:inherit;text-align:center}
-.fa {
-    font-size: 17px;
-}
+        
 
 .checked {
     color: orange;
-}
+
+        }
+ .tdh   {
+    height:30px;
+ }       
 </style>
-<table class="tg" >
+<table  style="undefined;table-layout: relative; width: 553px;" align="center" cellspacing="2" border="0">
 <colgroup>
-<col style="width: 123.015625px">
+<col style="width: 125.015625px">
 <col style="width: 45.015625px">
 <col style="width: 47.015625px">
 <col style="width: 45.015625px">
@@ -1684,95 +1733,95 @@
 <col style="width: 47.015625px">
 <col style="width: 72.015625px">
 </colgroup>
-  <tr>
-    <th class="tg-uys7" rowspan="2"><span style="font-weight:bold">Category</span></th>
-    <th class="tg-uys7" colspan="8"><span style="font-weight:bold">Semesters</span></th>
-    <th class="tg-uys7" rowspan="2"><span style="font-weight:bold">Score</span></th>
+  <tr class="tdh">
+    <th rowspan="2"><span style="font-weight:bold">Category</span></th>
+    <th colspan="8"><span style="font-weight:bold;text-align: center;">Semesters</span></th>
+    <th rowspan="2"><span style="font-weight:bold">Score</span></th>
   </tr>
   <tr>
-    <td class="tg-eo34"><span style="font-weight:bold">1</span></td>
-    <td class="tg-z72n"><span style="font-weight:bold">2</span></td>
-    <td class="tg-eo34"><span style="font-weight:bold">3</span></td>
-    <td class="tg-eo34"><span style="font-weight:bold">4</span></td>
-    <td class="tg-eo34"><span style="font-weight:bold">5</span></td>
-    <td class="tg-eo34"><span style="font-weight:bold">6</span></td>
-    <td class="tg-eo34"><span style="font-weight:bold">7</span></td>
-    <td class="tg-eo34"><span style="font-weight:bold">8</span></td>
+    <td ><span style="font-weight:bold">1</span></td>
+    <td ><span style="font-weight:bold">2</span></td>
+    <td ><span style="font-weight:bold">3</span></td>
+    <td ><span style="font-weight:bold">4</span></td>
+    <td ><span style="font-weight:bold">5</span></td>
+    <td ><span style="font-weight:bold">6</span></td>
+    <td ><span style="font-weight:bold">7</span></td>
+    <td ><span style="font-weight:bold">8</span></td>
   </tr>
   <tr>
-    <td class="tg-uys7"><span style="font-weight:bold">Category1</span></td>
-    <td class="tg-uys7" style="color:orange;">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;&#9733;
+    <td><span style="font-weight:bold">Category1</span></td>
+    <td style="color:orange;">&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;&#9733;
 </td>
   </tr>
   <tr>
-    <td class="tg-z72n">Category1</td>
-    <td class="tg-eo34" style="color:orange;">&#9733;&#9733;</td>
-    <td class="tg-eo34" style="color:orange;">&#9733;&#9733;</td>
-    <td class="tg-eo34" style="color:orange;">&#9733;&#9733;</td>
-   <td class="tg-eo34" style="color:orange;">&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;</td>
+    <td >Category1</td>
+    <td  style="color:orange;">&#9733;&#9733;</td>
+    <td  style="color:orange;">&#9733;&#9733;</td>
+    <td  style="color:orange;">&#9733;&#9733;</td>
+   <td  style="color:orange;">&#9733;&#9733;</td>
+    <td >&#9733;&#9733;</td>
+    <td >&#9733;&#9733;</td>
+    <td >&#9733;&#9733;</td>
+    <td >&#9733;&#9733;&#9733;</td>
+    <td >&#9733;&#9733;</td>
   </tr>
    <tr>
-    <td class="tg-uys7"><span style="font-weight:bold">Category1</span></td>
-    <td class="tg-uys7" style="color:orange;">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;&#9733;
+    <td><span style="font-weight:bold">Category1</span></td>
+    <td style="color:orange;">&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;&#9733;
 </td>
   </tr>
   <tr>
-    <td class="tg-z72n">Category1</td>
-    <td class="tg-eo34" style="color:orange;">&#9733;&#9733;</td>
-    <td class="tg-eo34" style="color:orange;">&#9733;&#9733;</td>
-    <td class="tg-eo34" style="color:orange;">&#9733;&#9733;</td>
-   <td class="tg-eo34" style="color:orange;">&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;</td>
+    <td >Category1</td>
+    <td  style="color:orange;">&#9733;&#9733;</td>
+    <td  style="color:orange;">&#9733;&#9733;</td>
+    <td  style="color:orange;">&#9733;&#9733;</td>
+   <td  style="color:orange;">&#9733;&#9733;</td>
+    <td >&#9733;&#9733;</td>
+    <td >&#9733;&#9733;</td>
+    <td >&#9733;&#9733;</td>
+    <td >&#9733;&#9733;&#9733;</td>
+    <td >&#9733;&#9733;</td>
   </tr>
   <tr>
-    <td class="tg-uys7"><span style="font-weight:bold">Category1</span></td>
-    <td class="tg-uys7" style="color:orange;">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;</td>
-    <td class="tg-uys7">&#9733;&#9733;&#9733;
+    <td><span style="font-weight:bold">Category1</span></td>
+    <td style="color:orange;">&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;</td>
+    <td>&#9733;&#9733;&#9733;
 </td>
   </tr>
   <tr>
-    <td class="tg-z72n">Category1</td>
-    <td class="tg-eo34" style="color:orange;">&#9733;&#9733;</td>
-    <td class="tg-eo34" style="color:orange;">&#9733;&#9733;</td>
-    <td class="tg-eo34" style="color:orange;">&#9733;&#9733;</td>
-   <td class="tg-eo34" style="color:orange;">&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;&#9733;</td>
-    <td class="tg-eo34">&#9733;&#9733;</td>
+    <td >Category1</td>
+    <td  style="color:orange;">&#9733;&#9733;</td>
+    <td  style="color:orange;">&#9733;&#9733;</td>
+    <td  style="color:orange;">&#9733;&#9733;</td>
+   <td  style="color:orange;">&#9733;&#9733;</td>
+    <td >&#9733;&#9733;</td>
+    <td >&#9733;&#9733;</td>
+    <td >&#9733;&#9733;</td>
+    <td >&#9733;&#9733;&#9733;</td>
+    <td >&#9733;&#9733;</td>
   </tr>
 </table>
 
@@ -1792,7 +1841,7 @@
 
 
                <div class="row core-section no-page-break" >
-                <h2 class="strip">Learning:</h2>
+                <h2 class="strip">Learning <img src="https://s3.ap-south-1.amazonaws.com/frndzzy-website-new/images/White.png" align="right" style="height:35px; padding:10px;"></h2>
 
                     <div class="col-md-12 margin">
 
@@ -1811,7 +1860,7 @@
                 </div>
                         
                 <div class="row core-section no-page-break" >
-                    <h2 class="strip">Subject Mapping</h2>
+                    <h2 class="strip">Subject Mapping <img src="https://s3.ap-south-1.amazonaws.com/frndzzy-website-new/images/White.png" align="right" style="height:35px; padding:10px;"></h2>
                           <svg style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;"  viewBox="0 0 900 400">
 
                                   <defs>
@@ -1891,16 +1940,16 @@
                       <th>Dummy Text</th>
                     </tr>
                     <tr>
-                      <td class="tg-031e" height="150" width="300"></td>
-                      <td class="tg-031e" height="150" width="300"></td>
+                      <td  height="150" width="300"></td>
+                      <td  height="150" width="300"></td>
                     </tr>
                     <tr>
                       <th>Dummy Text</th>
                       <th>Dummy Text</th>
                     </tr>
                     <tr>
-                      <td class="tg-031e" height="150" width="300"></td>
-                      <td class="tg-031e" height="150" width="300"></td>
+                      <td  height="150" width="300"></td>
+                      <td  height="150" width="300"></td>
                     </tr>
                   </table>
 
@@ -1909,7 +1958,7 @@
               </div>
 
                 <div class="row core-section no-page-break" >
-                    <h2 class="strip">Core subject mapping</h2>
+                    <h2 class="strip">Core subject mapping <img src="https://s3.ap-south-1.amazonaws.com/frndzzy-website-new/images/White.png" align="right" style="height:35px; padding:10px;"></h2>
                       <svg width="777" height="494" viewBox="0 0 777 494">
 
                         <defs>
@@ -1973,8 +2022,8 @@
                                 <th>Dummy Text</th>
                                 </tr>
                                 <tr>
-                                  <td class="tg-031e" height="150" width="250"></td>
-                                  <td class="tg-031e" height="150" width="250"></td>
+                                  <td  height="150" width="250"></td>
+                                  <td  height="150" width="250"></td>
                                 <td class="tg-yw4l" rowspan="3" width="250"></td>
                                 </tr>
                                 <tr>
@@ -1982,8 +2031,8 @@
                                   <th>Dummy Text</th>
                                 </tr>
                                 <tr>
-                                  <td class="tg-031e" height="150" width="250"></td>
-                                  <td class="tg-031e" height="150" width="250"></td>
+                                  <td  height="150" width="250"></td>
+                                  <td  height="150" width="250"></td>
                                 </tr>
                               </table>
                           </div>
@@ -1991,7 +2040,7 @@
                 </div>
 
                  <div class="row core-section no-page-break" >
-                    <h2 class="strip">Technology Utilization Vs Semester Results:</h2>
+                    <h2 class="strip">Technology Utilization Vs Semester Results <img src="https://s3.ap-south-1.amazonaws.com/frndzzy-website-new/images/White.png" align="right" style="height:35px; padding:10px;"></h2>
                         <div class="col-md-12">
 
             <center>                
@@ -2039,10 +2088,8 @@
                  </div>
 
 
-        
-
         <div class="row core-section no-page-break" >
-            <h2 class="strip">Title </h2>
+            <h2 class="strip">Title <img src="https://s3.ap-south-1.amazonaws.com/frndzzy-website-new/images/White.png" align="right" style="height:35px; padding:10px;"></h2>
                 <div class="col-md-12">
                 <h3 align="center">Academics</h3></br>
 
