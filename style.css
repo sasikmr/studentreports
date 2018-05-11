@@ -1,0 +1,737 @@
+/*
+
+   Table Of Content
+
+   1. Global Style
+   2. Preloader
+   3. Menu
+   4. About Me (Left Sidebar)
+   5. About Me Page
+   6. My Portfolio
+   7. Owl Carousel Navigation
+   8. Contact Me
+   9. Testimonials
+  10. Blog Post & Single Blog Page
+  11. Video Tutorials
+  12. Blockquote
+  13. List
+  14. Image Popup
+  15. End Box (Popup When Scroll Down)
+  16. About Author Box
+  17. You May Also Like
+  18. Comment
+  19. Load More Button
+  20. Subscribe Form
+  21. Footer
+  22. Socials Icons
+  23. Syntax Highlighter
+  24. Scroll To Top
+  25. Responsive
+  26. Useful Classes ( Such as : Margin, Padding, colors  "This classes will be helpful for you during designing/development time.")
+  27. frndzzy-credit
+
+
+*/
+
+
+
+/* Global Style */
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fafafa !important;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+::selection {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none !important;
+    color: #1abc9c;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+    color: #333333;
+}
+
+b {
+    font-weight: 600;
+    color: #333333;
+}
+
+p {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    background-color: transparent;
+}
+
+*:focus {
+    outline: 0;
+}
+
+#main {
+    margin: 50px 0;
+}
+
+.main-color {
+    color: #1abc9c;
+}
+
+.page-body {
+    background: #ffffff;
+    box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
+}
+
+.sub-title {
+    padding: 30px;
+}
+
+.sub-title h2 {
+    display: inline-block;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+
+}
+
+.sub-title i {
+    float: right;
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.content-page {
+    padding-top: 0px;
+    padding-bottom: 60px;
+    border-top: 1px dashed #dedede;
+    border-bottom: 1px dashed #dedede;
+}
+
+.content-page1 {
+    padding-top: 0px;
+    padding-bottom: 200px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.chart-text {
+  /*font: 16px/1.4em "Montserrat", Arial, sans-serif;*/
+  fill: #000;
+  -moz-transform: translateY(0.25em);
+  -ms-transform: translateY(0.25em);
+  -webkit-transform: translateY(0.25em);
+  transform: translateY(0.25em);
+}
+.chart-number {
+  font-size: 0.6em;
+  line-height: 1;
+  text-anchor: middle;
+  -moz-transform: translateY(-0.25em);
+  -ms-transform: translateY(-0.25em);
+  -webkit-transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
+}
+.chart-label {
+  font-size: 0.2em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  -moz-transform: translateY(0.7em);
+  -ms-transform: translateY(0.7em);
+  -webkit-transform: translateY(0.7em);
+  transform: translateY(0.7em);
+}
+figure {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media (min-width: 768px) {
+  figure {
+    flex-direction: row;
+  }
+}
+.figure-content,
+.figure-key {
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-self: center;
+}
+.figure-content svg {
+  height: auto;
+}
+.figure-key {
+  min-width: calc(8 / 12);
+}
+.figure-key [class*="shape-"] {
+  margin-right: 6px;
+}
+.figure-key-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.figure-key-list li {
+  padding: 0;
+}
+.shape-circle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 9px;
+  height: 9px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+.shape-fuschia {
+  background-color: #ce4b99;
+}
+.shape-lemon-lime {
+  background-color: #b1c94e;
+}
+.shape-blue {
+  background-color: #377bbc;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.subject1 {
+    padding-top: 0px;
+    border-bottom: 1px dashed #dedede;
+    border-right: 1px dashed #dedede;
+}
+
+.subject2 {
+    padding-top: 0px;
+    border-bottom: 1px dashed #dedede;
+    border-right: 1px dashed #dedede;
+}
+
+.subject3 {
+    padding-top: 0px;
+    border-bottom: 1px dashed #dedede;
+}
+
+.subject4 {
+    padding-top: 0px;
+    border-right: 1px dashed #dedede;
+}
+
+.subject5 {
+    padding-top: 0px;
+    border-right: 1px dashed #dedede;
+}
+
+.subject6 {
+    padding-top: 0px;
+}
+
+/* About Me (Left Sidebar) */
+
+.avatar {
+    display: block;
+    border-radius: 200px;
+    box-sizing: border-box;
+    background-color: #DDD;
+    border: 6px solid #2575AE;
+}
+
+.my-pic img {
+       border-radius: 50%;
+    width: 100%;
+
+}
+
+.my-detail {
+    text-align: center;
+    margin-bottom: 30px;
+    background: #ffffff;
+
+}
+
+
+.my-detail .white-spacing {
+    padding: 23px 0;
+    border-bottom: 1px dashed #cccccc;
+}
+
+.my-detail h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.my-detail span {
+    color: #c1c1c1;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+/* Useful Classes */
+
+/* Spacing ( with Margin and Padding ) */
+
+/* Margin */
+
+.margin-0 {
+	margin: 0px !important;
+}
+
+/* Margin Top */
+
+.margin-top-0 {
+	margin-top: 0px !important;
+}
+
+.margin-top-10 {
+	margin-top: 10px !important;
+}
+
+.margin-top-20 {
+	margin-top: 20px !important;
+}
+
+.margin-top-30 {
+	margin-top: 30px !important;
+}
+
+.margin-top-40 {
+	margin-top: 40px !important;
+}
+
+.margin-top-50 {
+	margin-top: 50px !important;
+}
+
+.margin-top-60 {
+	margin-top: 60px !important;
+}
+
+.margin-top-70 {
+	margin-top: 70px !important;
+}
+
+.margin-top-80 {
+	margin-top: 80px !important;
+}
+
+.margin-top-90 {
+	margin-top: 90px !important;
+}
+
+.margin-top-100 {
+	margin-top: 100px !important;
+}
+
+.margin-top-120 {
+	margin-top: 120px !important;
+}
+
+.margin-top-150 {
+	margin-top: 150px !important;
+}
+
+.margin-top-200 {
+	margin-top: 200px !important;
+}
+
+
+/* Margin Bottom */
+
+.margin-bottom-0 {
+	margin-bottom: 0px !important;
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10px !important;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px !important;
+}
+
+.margin-bottom-30 {
+	margin-bottom: 30px !important;
+}
+
+.margin-bottom-40 {
+	margin-bottom: 40px !important;
+}
+
+.margin-bottom-50 {
+	margin-bottom: 50px !important;
+}
+
+.margin-bottom-60 {
+	margin-bottom: 60px !important;
+}
+
+.margin-bottom-70 {
+	margin-bottom: 70px !important;
+}
+
+.margin-bottom-80 {
+	margin-bottom: 80px !important;
+}
+
+.margin-bottom-90 {
+	margin-bottom: 90px !important;
+}
+
+.margin-bottom-100 {
+	margin-bottom: 100px !important;
+}
+
+.margin-bottom-120 {
+	margin-bottom: 120px !important;
+}
+
+.margin-bottom-150 {
+	margin-bottom: 150px !important;
+}
+
+.margin-bottom-200 {
+	margin-bottom: 200px !important;
+}
+
+/* Padding */
+
+.padding-0 {
+	padding: 0px !important;
+}
+
+/* Padding Top */
+
+.padding-top-0 {
+	padding-top: 0px !important;
+}
+
+.padding-top-10 {
+	padding-top: 10px !important;
+}
+
+.padding-top-20 {
+	padding-top: 20px !important;
+}
+
+.padding-top-30 {
+	padding-top: 30px !important;
+}
+
+.padding-top-40 {
+	padding-top: 40px !important;
+}
+
+.padding-top-50 {
+	padding-top: 50px !important;
+}
+
+.padding-top-60 {
+	padding-top: 60px !important;
+}
+
+.padding-top-70 {
+	padding-top: 70px !important;
+}
+
+.padding-top-80 {
+	padding-top: 80px !important;
+}
+
+.padding-top-90 {
+	padding-top: 90px !important;
+}
+
+.padding-top-100 {
+	padding-top: 100px !important;
+}
+
+.padding-top-120 {
+	padding-top: 120px !important;
+}
+
+.padding-top-150 {
+	padding-top: 150px !important;
+}
+
+.padding-top-200 {
+	padding-top: 200px !important;
+}
+
+
+/* Padding Bottom */
+
+.padding-bottom-0 {
+	padding-bottom: 0px !important;
+}
+
+.padding-bottom-10 {
+	padding-bottom: 10px !important;
+}
+
+.padding-bottom-20 {
+	padding-bottom: 20px !important;
+}
+
+.padding-bottom-30 {
+	padding-bottom: 30px !important;
+}
+
+.padding-bottom-40 {
+	padding-bottom: 40px !important;
+}
+
+.padding-bottom-50 {
+	padding-bottom: 50px !important;
+}
+
+.padding-bottom-60 {
+	padding-bottom: 60px !important;
+}
+
+.padding-bottom-70 {
+	padding-bottom: 70px !important;
+}
+
+.padding-bottom-80 {
+	padding-bottom: 80px !important;
+}
+
+.padding-bottom-90 {
+	padding-bottom: 90px !important;
+}
+
+.padding-bottom-100 {
+	padding-bottom: 100px !important;
+}
+
+.padding-bottom-120 {
+	padding-bottom: 120px !important;
+}
+
+.padding-bottom-150 {
+	padding-bottom: 150px !important;
+}
+
+.padding-bottom-200 {
+	padding-bottom: 200px !important;
+}
+
+
+
+/* Colors */
+
+.color-1 {
+	color: #f306a0;
+}
+
+.color-2 {
+	color: #d60bfb;
+}
+
+.color-3 {
+	color: #d8be10;
+}
+
+.color-4 {
+	color: #0fd28a;
+}
+
+.color-5 {
+	color: #f97400;
+}
+
+.color-6 {
+	color: #08a6f3;
+}
+
+
+
+/* Background Color */
+
+.bg-color-1 {
+	background-color: #f306a0;
+}
+
+.bg-color-2 {
+	background-color: #d60bfb;
+}
+
+.bg-color-3 {
+	background-color: #d8be10;
+}
+
+.bg-color-4 {
+	background-color: #0fd28a;
+}
+
+.bg-color-5 {
+	background-color: #f97400;
+}
+
+.bg-color-6 {
+	background-color: #08a6f3;
+}
+
+
+
+/* Tooltip Styles */
+
+.tooltip-inner {
+    padding: 10px 12px;
+    min-width: 150px;
+    width: 100%;
+}
+
+.tooltip.top {
+    margin-top: -2px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+.tooltip.bottom {
+    margin-top:15px;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+.tooltip.left {
+    margin-right: 15px;
+}
+
+.tooltip.right {
+    margin-left: 15px;
+}
+
+.tooltip-color .tooltip-inner {
+    color: #fff;
+}
+
+
+
+/* frndzzy-credit Credit */
+
+.frndzzy-credit {
+    color: #333333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.frndzzy-credit a {
+    color: #1abc9c;
+    font-weight: 600;
+}
+
+.frndzzy-credit a:hover {
+    color: #333333;
+}
+
+progress[value] {
+    /* Get rid of the default appearance */
+    appearance: none;
+
+    /* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
+    border: none;
+
+    /* Add dimensions */
+    width: 100%; height: 9px;
+
+    /* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
+      background-color: whiteSmoke;
+      border-radius: 3px;
+      box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+
+    /* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
+    color: royalblue;
+
+    position: relative;
+    /* margin: 0 0 1.5em; */
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: whiteSmoke;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+
+p[data-value] {
+
+  position: relative;
+}
+
+p[data-value]:after {
+    content: attr(data-value) '%';
+    position: absolute; right:0;
+}
+
+.text::-webkit-progress-value,
+.python::-webkit-progress-value  {
+    /* Gradient background with Stripes */
+    background-image:
+    -webkit-linear-gradient( 135deg,
+                                                     transparent,
+                                                     transparent 33%,
+                                                     rgba(0,0,0,.1) 33%,
+                                                     rgba(0,0,0,.1) 66%,
+                                                     transparent 66%),
+    -webkit-linear-gradient( top,
+                                                        rgba(255, 255, 255, .25),
+                                                        rgba(0,0,0,.2)),
+     -webkit-linear-gradient( left, #09c, #f44);
+}
