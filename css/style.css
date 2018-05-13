@@ -208,6 +208,22 @@ figure {
      -moz-border-radius: 50%;
           border-radius: 50%;
 }
+
+.shape-legend1 {
+  background-color: #FF0000;
+}
+.shape-legend2 {
+  background-color: #06D6A0;
+}
+.shape-legend3 {
+  background-color: #118AB2;
+}
+.shape-legend4 {
+  background-color: #FFD166;
+}
+.shape-legend5 {
+  background-color: #EF476F;
+}
 .shape-fuschia {
   background-color: #ce4b99;
 }
@@ -228,13 +244,6 @@ figure {
   border: 0;
 }
 
-.bar {
-  fill: orange;
-}
-
-.bar:hover {
-  fill: darkgray;
-}
 
 .axis {
   font: 10px sans-serif;
