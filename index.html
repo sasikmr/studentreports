@@ -23,6 +23,9 @@
     <!-- Google Web Fonts  -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
   <style>
+
+  
+
     .strip{
         background-color: #2575AE;
         padding: 15px 0px 15px 20px;
@@ -57,13 +60,13 @@
         padding-left:0;
     }
     @media print{
-        .col-xs-4, .no-page-break{
+    .col-xs-4, .no-page-break{
             page-break-inside: avoid;
-        }
-        .overview-section{
-            padding-top: 0px !important;
-        }
-        .header {
+     }
+     .overview-section{
+     padding-top: 0px !important;
+     }
+     .header {
             overflow: hidden;
              padding: 20px 10px;
         }
@@ -167,6 +170,30 @@
     text-align: center;
 }
 
+.barcontainer1 {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+  min-height: 100px;
+  max-height: 200px;
+  min-width: 100px;
+  max-width: 120px;
+}
+.bar1 {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  border: 0px solid black;
+  border-radius: 2px 2px 0 0;
+  background: orange;
+  width: 20%;
+  text-align: center;
+  font-size: 10px;
+  color: white !important;
+}
+.bar1:nth-child(1) {
+  left: 0%;
+}
 
 </style>
 
@@ -351,23 +378,11 @@
 
                   <div class='bar' style='height:75%;background: #FF0000;color: white;'>
 
-75% <p style="-webkit-transform: rotate(-90deg);
-    position: relative;
-    float: left;
-    /* background: gray; */
-    width: 80px;
-    height: 100%;
-    border-radius: 5px;">CE01</p>
+75% 
                   </div>
                   <div class='bar' style='height: 79%;background: #06D6A0;color: white;'>
 
-79% <p style="-webkit-transform: rotate(-90deg);
-    position: relative;
-    float: left;
-    /* background: gray; */
-    width: 80px;
-    height: 100%;
-    border-radius: 5px;">CE01</p>
+79% 
                   </div>
                   <div class='bar' style='height: 62%;background: #118AB2;color: white;'>
 
@@ -698,61 +713,77 @@
             <div style="padding: 20px;">
         <strong>Description:</strong> The given table is a representation of your Academic scores.
         </div>
-              <table  style="undefined;table-layout: relative; width: 743px;" align="center" cellspacing="2" border="0"><colgroup> <col style="width: 75.015625px;background-color: #A4AEC1;"> <col style="width: 57.015625px;background-color: #BFDBD5;"> <col style="width: 399.015625px;background-color: #D4E7E3;"> <col style="width: 69.015625px;background-color: #DFEDEA;"> <col style="width: 74.015625px;background-color: #E9F3F1;"> <col style="width: 69.015625px;background-color: #E9F3F1;"> </colgroup>
+           <table  style="undefined;table-layout: relative; width: 743px;" align="center" cellspacing="2" border="0">
+    <colgroup> 
+        <col style="width: 75.015625px;background-color: #A4AEC1;"> 
+        <col style="width: 57.015625px;background-color: #BFDBD5;">
+        <col style="width: 27px;background-color: #BFDBD5;"> 
+        <col style="width: 399.015625px;background-color: #D4E7E3;"> 
+        <col style="width: 69.015625px;background-color: #DFEDEA;"> 
+        <col style="width: 74.015625px;background-color: #E9F3F1;"> 
+        <col style="width: 69.015625px;background-color: #E9F3F1;"> </colgroup>
                 <tbody>
-                <tr style="height: 36px;background-color: #65607B;color: white;">
+                <tr style="height: 36px;background-color: #65607B;color: white !important;">
                 <th style="height: 26px width: 74px; text-align: center;">Year</th>
                 <th  style="height: 26px width: 57px;text-align: center;">Sem</th>
-                <th  style="height: 26px width: 394px;text-align: center;"><span style="font-weight: bold;">Subject Name</span></th>
-                <th  style="height: 26px width: 69px;text-align: center;"><span style="font-weight: bold;">Internals</span></th>
+                 <th  style="height: 26px width: 57px;text-align: center;">Code</th>
+                <th  style="height: 26px width: 394px;text-align: center;">Subjects</th>
+                <th  style="height: 26px width: 69px;text-align: center;">Internals</th>
                 <th  style="height: 26px width: 74px;text-align: center;"><span style="font-weight: bold;">Externals</span></th>
                 <th  style="height: 26px width: 69px;text-align: center;"><span style="font-weight: bold;">Total</span></th>
                 </tr>
                 <tr style="height: 26px">
                 <td  style="height: 369px; width: 74px;text-align: center;" rowspan="16"><span style="font-weight: bold;">Year I</span></td>
                 <td  style="height: 185px; width: 57px;text-align: center;" rowspan="8"><span style="font-weight: bold;">SEM 1</span></td>
+                <td  style="height: 26px width: 394px;">&nbsp;001</td>
                 <td  style="height: 26px width: 394px;">&nbsp;English</td>
                 <td  style="height: 26px width: 69px;">&nbsp;20</td>
                 <td  style="height: 26px width: 74px;">&nbsp;45</td>
                 <td  style="height: 26px width: 69px;">65</td>
                 </tr>
                 <tr style="height: 26px">
+                    <td  style="height: 26px width: 394px;">&nbsp;002</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Mathematical Methods</td>
                 <td  style="height: 26px width: 69px;">&nbsp;19</td>
                 <td  style="height: 26px width: 74px;">&nbsp;46</td>
                 <td  style="height: 26px width: 69px;">65</td>
                 </tr>
                 <tr style="height: 26px">
+                    <td  style="height: 26px width: 394px;">&nbsp;003</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Mathematics 1</td>
                 <td  style="height: 26px width: 69px;">&nbsp;18</td>
                 <td  style="height: 26px width: 74px;">&nbsp;52</td>
                 <td  style="height: 26px width: 69px;">&nbsp;75</td>
                 </tr>
                 <tr style="height: 24px;">
+                <td  style="height: 26px width: 394px;">&nbsp;004</td>
                 <td  style="height: 24px; width: 394px;">&nbsp;Engineering Physics</td>
                 <td  style="height: 24px; width: 69px;">&nbsp;21</td>
                 <td  style="height: 24px; width: 74px;">&nbsp;65</td>
                 <td  style="height: 24px; width: 69px;">&nbsp;58</td>
                 </tr>
                 <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;005</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Engineering Chemistry</td>
                 <td  style="height: 26px width: 69px;">&nbsp;23</td>
                 <td  style="height: 26px width: 74px;">&nbsp;71</td>
                 <td  style="height: 26px width: 69px;">&nbsp;99</td>
                 </tr>
-                <tr style="height: 26px">
+                <tr style="height: 26px"><td  style="height: 26px width: 394px;">&nbsp;006</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Computer Programming &amp; Data Structures</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 <td  style="height: 26px width: 74px;">&nbsp;73</td>
                 <td  style="height: 26px width: 69px;">&nbsp;88</td>
                 </tr>
                 <tr style="height: 26px">
+                    <td  style="height: 26px width: 394px;">&nbsp;LAB</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Computer Programming LAB</td>
                 <td  style="height: 26px width: 69px;">&nbsp;20</td>
                 <td  style="height: 26px width: 74px;">&nbsp;75</td>
                 <td  style="height: 26px width: 69px;">&nbsp;75</td>
                 </tr>
                 <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;LAB</td>
                 <td  style="height: 26px width: 394px;">&nbsp;English Communication Skills LAB</td>
                 <td  style="height: 26px width: 69px;">&nbsp;16</td>
                 <td  style="height: 26px width: 74px;">&nbsp;59</td>
@@ -760,48 +791,56 @@
                 </tr>
                 <tr style="height: 26px">
                 <td style="height: 184px; width: 57px;text-align: center;" rowspan="8"><span style="font-weight: bold;">SEM 2</span></td>
+                <td  style="height: 26px width: 394px;">&nbsp;007</td>
                 <td style="height: 26px width: 394px;">&nbsp;IT Workshop &amp; Engineering Workshop</td>
                 <td  style="height: 26px width: 69px;">&nbsp;15</td>
                 <td  style="height: 26px width: 74px;">&nbsp;56</td>
                 <td  style="height: 26px width: 69px;">&nbsp;45</td>
                 </tr>
                 <tr style="height: 26px">
+                    <td  style="height: 26px width: 394px;">&nbsp;008</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Mathematical Methods</td>
                 <td  style="height: 26px width: 69px;">&nbsp;18</td>
                 <td  style="height: 26px width: 74px;">&nbsp;53</td>
                 <td  style="height: 26px width: 69px;">&nbsp;58</td>
                 </tr>
                 <tr style="height: 26px">
+                    <td  style="height: 26px width: 394px;">&nbsp;009</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Mathematics 1</td>
                 <td  style="height: 26px width: 69px;">&nbsp;12</td>
                 <td  style="height: 26px width: 74px;">&nbsp;44</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 </tr>
                 <tr style="height: 26px">
+                    <td  style="height: 26px width: 394px;">&nbsp;010</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Engineering Physics</td>
                 <td  style="height: 26px width: 69px;">&nbsp;15</td>
                 <td  style="height: 26px width: 74px;">&nbsp;42</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 </tr>
                 <tr style="height: 26px">
+                    <td  style="height: 26px width: 394px;">&nbsp;011</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Engineering Chemistry</td>
                 <td  style="height: 26px width: 69px;">&nbsp;19</td>
                 <td  style="height: 26px width: 74px;">&nbsp;50</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 </tr>
                 <tr style="height: 26px">
+                    <td  style="height: 26px width: 394px;">&nbsp;012</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Computer Programming &amp; Data Structures</td>
                 <td  style="height: 26px width: 69px;">&nbsp;23</td>
                 <td  style="height: 26px width: 74px;">&nbsp;60</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 </tr>
                 <tr style="height: 26px">
+                    <td  style="height: 26px width: 394px;">&nbsp;LAB</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Engineering Drawing</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 <td  style="height: 26px width: 74px;">&nbsp;70</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 </tr>
                 <tr style="height: 26px">
+                    <td  style="height: 26px width: 394px;">&nbsp;LAB</td>
                 <td  style="height: 26px width: 394px;">&nbsp;ENGG Physics &amp; ENGG Chemistry Lab</td>
                 <td  style="height: 26px width: 69px;">&nbsp;23</td>
                 <td  style="height: 26px width: 74px;">&nbsp;50</td>
@@ -810,48 +849,55 @@
                 <tr style="height: 26px">
                 <td  style="height: 368px; width: 74px;text-align: center;" rowspan="16"><span style="font-weight: bold;">Year II</span></td>
                 <td  style="height: 184px; width: 57px;text-align: center;" rowspan="8"><span style="font-weight: bold;">SEM 1</span></td>
+                <td  style="height: 26px width: 394px;">&nbsp;013</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Data Communication System</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 <td  style="height: 26px width: 74px;">&nbsp;20</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 </tr>
                 <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;014</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Mathematical Fountication of Computer Science</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 <td  style="height: 26px width: 74px;">&nbsp;28</td>
                 <td  style="height: 26px width: 69px;">&nbsp;85</td>
                 </tr>
                 <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;015</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Data Structures Through C++</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 <td  style="height: 26px width: 74px;">&nbsp;32</td>
                 <td  style="height: 26px width: 69px;">&nbsp;85</td>
                 </tr>
                 <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;016</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Digital Logic Design &amp; Computer Organization</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 <td  style="height: 26px width: 74px;">&nbsp;33</td>
                 <td  style="height: 26px width: 69px;">&nbsp;85</td>
                 </tr>
                 <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;017</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Electronic Device &amp; Circuits</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 <td  style="height: 26px width: 74px;">&nbsp;35</td>
                 <td  style="height: 26px width: 69px;">&nbsp;85</td>
                 </tr>
                 <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;018</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Basic Electrical ENGG</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 <td  style="height: 26px width: 74px;">&nbsp;36</td>
                 <td  style="height: 26px width: 69px;">&nbsp;75</td>
                 </tr>
-                <tr style="height: 26px">
+                <tr style="height: 26px"><td  style="height: 26px width: 394px;">&nbsp;LAB</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Electrical &amp; Electronics LAB</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 <td  style="height: 26px width: 74px;">&nbsp;38</td>
                 <td  style="height: 26px width: 69px;">&nbsp;58</td>
                 </tr>
                 <tr style="height: 26px">
+                    <td  style="height: 26px width: 394px;">&nbsp;LAB</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Data Structures Lab Through C++</td>
                 <td  style="height: 26px width: 69px;">&nbsp;24</td>
                 <td  style="height: 26px width: 74px;">&nbsp;38</td>
@@ -859,119 +905,144 @@
                 </tr>
                 <tr style="height: 26px">
                 <td style="height: 184px; width: 57px;text-align: center;" rowspan="8"><span style="font-weight: bold;text-align: center;">SEM 2</span></td>
+                <td  style="height: 26px width: 394px;">&nbsp;019</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Principles of Programming Language</td>
                 <td  style="height: 26px width: 69px;">&nbsp;24</td>
                 <td  style="height: 26px width: 74px;">&nbsp;38</td>
                 <td  style="height: 26px width: 69px;">&nbsp;74</td>
                 </tr>
                 <tr style="height: 26px">
-                <td  style="height: 26px width: 394px;">&nbsp;Database Management System</td>
+                    <td  style="height: 26px width: 394px;">&nbsp;020</td>
+                <td  style="height: 26px width: 394px;">&nbsp;Database MaLABgement System</td>
                 <td  style="height: 26px width: 69px;">&nbsp;24</td>
                 <td  style="height: 26px width: 74px;">&nbsp;35</td>
                 <td  style="height: 26px width: 69px;">&nbsp;47</td>
                 </tr>
                 <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;021</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Object Oriented Programming</td>
                 <td  style="height: 26px width: 69px;">&nbsp;24</td>
                 <td  style="height: 26px width: 74px;">&nbsp;39</td>
                 <td  style="height: 26px width: 69px;">&nbsp;85</td>
                 </tr>
                 <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;022</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Environmental Studies</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 <td  style="height: 26px width: 74px;">&nbsp;75</td>
                 <td  style="height: 26px width: 69px;">&nbsp;95</td>
                 </tr>
                 <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;023</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Probability&nbsp; &amp; Statistics</td>
                 <td  style="height: 26px width: 69px;">&nbsp;23</td>
                 <td  style="height: 26px width: 74px;">&nbsp;45</td>
                 <td  style="height: 26px width: 69px;">&nbsp;75</td>
                 </tr>
                 <tr style="height: 26px">
-                <td  style="height: 26px width: 394px;">&nbsp;Design &amp; Analysis of Algorithms</td>
+                <td  style="height: 26px width: 394px;">&nbsp;024</td>
+                <td  style="height: 26px width: 394px;">&nbsp;Design &amp; ALABlysis of Algorithms</td>
                 <td  style="height: 26px width: 69px;">&nbsp;23</td>
                 <td  style="height: 26px width: 74px;">&nbsp;35</td>
                 <td  style="height: 26px width: 69px;">&nbsp;85</td>
                 </tr>
                 <tr style="height: 26px">
+                <td  style="height: 26px width: 394px;">&nbsp;LAB</td>
                 <td  style="height: 26px width: 394px;">&nbsp;Object Oriented Programming LAB</td>
                 <td  style="height: 26px width: 69px;">&nbsp;23</td>
                 <td  style="height: 26px width: 74px;">&nbsp;25</td>
                 <td  style="height: 26px width: 69px;">&nbsp;88</td>
                 </tr>
                 <tr style="height: 26px">
-                <td  style="height: 26px width: 394px;">&nbsp;Database Management System LAB</td>
+                <td  style="height: 26px width: 394px;">&nbsp;LAB</td>
+                <td  style="height: 26px width: 394px;">&nbsp;Database MaLABgement System LAB</td>
                 <td  style="height: 26px width: 69px;">&nbsp;25</td>
                 <td  style="height: 26px width: 74px;">&nbsp;15</td>
                 <td style="height: 26px width: 69px;">&nbsp;76</td>
                 </tr>
 
-              </tbody></table>
+              </tbody></table>   
 
 
                     
-</div>
+        </div>
         <div class="row core-section no-page-break">
       
         <div class="col-md-12 ">
         <h2 class="strip">Academics <img src="https://s3.ap-south-1.amazonaws.com/frndzzy-website-new/images/White.png" align="right" style="height:35px; padding:10px;"></h2>
 
-              <table  style="undefined;table-layout: relative; width: 743px;" align="center" cellspacing="2" border="0"><colgroup> <col style="width: 75.015625px;background-color: #A4AEC1;"> <col style="width: 57.015625px;background-color: #BFDBD5;"> <col style="width: 399.015625px;background-color: #D4E7E3;"> <col style="width: 69.015625px;background-color: #DFEDEA;"> <col style="width: 74.015625px;background-color: #E9F3F1;"> <col style="width: 69.015625px;background-color: #E9F3F1;"> </colgroup>
+               <table  style="undefined;table-layout: relative; width: 743px;" align="center" cellspacing="2" border="0">
+    <colgroup> 
+        <col style="width: 75.015625px;background-color: #A4AEC1;"> 
+        <col style="width: 57.015625px;background-color: #BFDBD5;">
+        <col style="width: 27px;background-color: #BFDBD5;"> 
+        <col style="width: 399.015625px;background-color: #D4E7E3;"> 
+        <col style="width: 69.015625px;background-color: #DFEDEA;"> 
+        <col style="width: 74.015625px;background-color: #E9F3F1;"> 
+        <col style="width: 69.015625px;background-color: #E9F3F1;"> </colgroup>
                 <tbody>
                 <tr style="height: 36px;background-color: #65607B;color: white;">
                 <th style="height: 26px width: 74px; text-align: center;">Year</th>
                 <th  style="height: 26px width: 57px;text-align: center;">Sem</th>
-                <th  style="height: 26px width: 394px;text-align: center;"><span style="font-weight: bold;">Subject Name</span></th>
-                <th  style="height: 26px width: 69px;text-align: center;"><span style="font-weight: bold;">Internals</span></th>
+                 <th  style="height: 26px width: 57px;text-align: center;">Code</th>
+                <th  style="height: 26px width: 394px;text-align: center;">Subjects</th>
+                <th  style="height: 26px width: 69px;text-align: center;">Internals</th>
                 <th  style="height: 26px width: 74px;text-align: center;"><span style="font-weight: bold;">Externals</span></th>
                 <th  style="height: 26px width: 69px;text-align: center;"><span style="font-weight: bold;">Total</span></th>
                 </tr>
                 <tr style="height: 23px;">
                 <td style="height: 364px; width: 74px;text-align: center;" rowspan="16"><span style="font-weight: bold;">Year III</span></td>
                 <td style="height: 184px; width: 57px;text-align: center;" rowspan="8"><span style="font-weight: bold;">SEM 1</span></td>
+                <td  style="height: 26px width: 394px;">&nbsp;025</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Automata &amp; Compiler Design</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;21</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;52</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;37</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;026</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Linux Programming</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;12</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;53</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;72</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;027</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Software Engineering</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;25</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;56</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;71</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;028</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Operating System</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;13</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;58</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;78</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;029</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Computer Networks</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;25</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;56</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;82</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;030</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Managerial Economics and Financial Analysis</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;11</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;58</td>
                 <td style="height: 23px; width: 69px;">&nbsp;83</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;LAB</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Operating System &amp; Computer Networks&nbsp; LAB</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;13</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;56</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;93</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;LAB</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Advance English Communication Skills Lab</td>
                 <td style="height: 23px; width: 69px;">&nbsp;24</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;58</td>
@@ -979,48 +1050,56 @@
                 </tr>
                 <tr style="height: 23px;">
                 <td  style="height: 180px; width: 57px;text-align: center;" rowspan="8"><span style="font-weight: bold;">SEM 2</span></td>
+                <td  style="height: 26px width: 394px;">&nbsp;031</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Embedded System</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;21</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;54</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;85</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;032</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Network Security</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;23</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;65</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;85</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;033</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Data Warehouse and Data Mining</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;25</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;65</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;68</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;034</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Web Technologies</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;12</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;52</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;86</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;035</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Operation Research</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;18</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;56</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;86</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;036</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Computer Graphics</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;12</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;63</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;85</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;LAB</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Embedded System and Data Mining LAB</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;13</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;61</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;47</td>
                 </tr>
                 <tr style="height: 19px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;LAB</td>
                 <td  style="height: 19px; width: 394px;">&nbsp;Web Technologies LAB</td>
                 <td style="height: 19px; width: 69px;">&nbsp;18</td>
                 <td  style="height: 19px; width: 74px;">&nbsp;53</td>
@@ -1029,48 +1108,56 @@
                 <tr style="height: 23px;">
                 <td  style="height: 391px; width: 74px;text-align: center;" rowspan="17"><span style="font-weight: bold;">Year IV</span></td>
                 <td  style="height: 184px; width: 57px;text-align: center;" rowspan="8"><span style="font-weight: bold;">SEM 1</span></td>
+                <td  style="height: 26px width: 394px;">&nbsp;037</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Object Oriented Analysis and Design</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;25</td>
                 <td style="height: 23px; width: 74px;">&nbsp;75</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;68</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;038</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Human Computer Interaction</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;23</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;74</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;68</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;039</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Software Testing Methodologies</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;24</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;72</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;47</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;040</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Mobile Application Development</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;23</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;72</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;86</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;041</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;VLSI Design</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;23</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;62</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;58</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;042</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Semantic Web and Social Networks</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;21</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;63</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;86</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;LAB</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Case Tools and Software Testing LAB</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;23</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;63</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;68</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;LAB</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Mobile Application Development LAB</td>
                 <td style="height: 23px; width: 69px;">&nbsp;21</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;61</td>
@@ -1078,58 +1165,67 @@
                 </tr>
                 <tr style="height: 23px;">
                 <td  style="height: 207px; width: 57px;text-align: center;" rowspan="9"><span style="font-weight: bold;">SEM 2</span></td>
+                <td  style="height: 26px width: 394px;">&nbsp;043</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Management Science</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;23</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;67</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;58</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;044</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;E-Commerce&nbsp;</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;23</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;69</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;25</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;045</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Design Patterns</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;25</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;68</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;35</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;046</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Industry Oriented Mini Project</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;23</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;64</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;85</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;047</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Seminar</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;21</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;65</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;63</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;048</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Project Work</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;21</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;65</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;72</td>
                 </tr>
                 <tr style="height: 23px;">
+                    <td  style="height: 26px width: 394px;">&nbsp;LAB</td>
                 <td  style="height: 23px; width: 394px;">&nbsp;Comprehensive VIVA</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;21</td>
                 <td  style="height: 23px; width: 74px;">&nbsp;64</td>
                 <td  style="height: 23px; width: 69px;">&nbsp;58</td>
                 </tr>
                 <tr style="height: 23px;">
-                <td  style="height: 23px; width: 394px;">&nbsp;Semantic Web and Social Networks</td>
-                <td  style="height: 23px; width: 69px;">&nbsp;21</td>
-                <td  style="height: 23px; width: 74px;">&nbsp;53</td>
-                <td  style="height: 23px; width: 69px;">&nbsp;58</td>
+                    <td  style="height: 26px width: 394px;">&nbsp;</td>
+                <td  style="height: 23px; width: 394px;">&nbsp;</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;</td>
+                <td  style="height: 23px; width: 69px;">&nbsp;</td>
                 </tr>
                 <tr style="height: 23px;">
-                <td  style="height: 23px; width: 394px;">&nbsp;Semantic Web and Social Networks</td>
-                <td style="height: 23px; width: 69px;">&nbsp;21</td>
-                <td  style="height: 23px; width: 74px;">&nbsp;53</td>
-                <td style="height: 23px; width: 69px;">&nbsp;58</td>
+                    <td  style="height: 26px width: 394px;">&nbsp;</td>
+                <td  style="height: 23px; width: 394px;">&nbsp;</td>
+                <td style="height: 23px; width: 69px;">&nbsp;</td>
+                <td  style="height: 23px; width: 74px;">&nbsp;</td>
+                <td style="height: 23px; width: 69px;">&nbsp;</td>
                 </tr>
                 </tbody>
                 </table>
@@ -1149,54 +1245,92 @@
 
                     </div>
                     <div class="col-md-3 col-xs-4">
-                        <div class='barcontainer'>
+                <style type="text/css">
+.barnew {
+  display:table;
+  table-layout: fixed;   
+  
+  width:300px;
+  max-width:300px;
+  }
+                        
+.barnew li{
+    position:relative;
+    display:table-cell;
+    vertical-align:bottom;
+    height:100px;
+  }
+  .barnew p{
+    color:white !important;
+  }
+  .barnew span{
+    
+    margin: 0 0.3em;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 3px 3px 0 0;
+    
+    }
+    .barnew  span:before{
+      position:absolute;
+      left:0;right:0;top:100%;
+      padding:2px 1em 0;
+        display:block;
+      text-align:center;
+      content:attr(title);
+      font-weight:bold;
+      color:black;
+     
+    }
+</style>
+                        
+<ul class="barnew">
+  <li>
+    <span style="height:75%;background: #FF0000;" title="1"><p>55%</p></span>
+  </li>
+  <li>
+    <span style="height:80%; background: #06D6A0;" title="2"><p>75%</p></span>
+  </li>
+  <li>
+    <span style="height:90%;background: #118AB2;" title="3"><p>90%</p></span>
+  </li>
+  <li>
+    <span style="height:79%;background: #FFD166;" title="4"><p>79%</p></span>
+  </li>
+  <li>
+    <span style="height:75%;background:#EF476F;" title="5"><p>75%</p></span>
+  </li>
+  <li>
+    <span style="height:87%;background:#7A5100;" title="6"><p>87%</p></span>
+  </li>
+</ul>    
 
-                      <div class='bar' style='height:75%;background: #FF0000;color: white;'>
-
-                      75%
-                      </div>
-                      <div class='bar' style='height: 80%;background: #06D6A0;color: white;'>
-
-                        80%
-                      </div>
-                      <div class='bar' style='height: 90%;background: #118AB2;color: white;'>
-
-                        90%
-                      </div>
-                      <div class='bar' style='height:79%; background: #FFD166;color: white;'>
-
-                        79%
-                      </div>
-                      <div class='bar' style='height:75%; background:#EF476F;color: white;'>
-                        75%
-
-                      </div>
-                      <div class='bar' style='height:87%; background:#7A5100;color: white;'>
-                        87%
-
-                              </div>
-
-</div>
 
                     </div>
                     <div class="col-md-3 col-xs-4">
-                        <div class='barcontainer'>
-
-                              <div class='bar' style='height:79%;background: #FF0000;color: white;'>79%
-                              </div>
-                              <div class='bar' style='height: 75%;background: #06D6A0;color: white;'>75%
-                              </div>
-                              <div class='bar' style='height: 89%;background: #118AB2;color: white;'>89%
-                              </div>
-                              <div class='bar' style='height:85%; background: #FFD166;color: white;'>85%
-                              </div>
-                              <div class='bar' style='height:83%; background:#EF476F;color: white;'>83%
-                               </div>
-                              <div class='bar' style='height:80%; background:#7A5100;color: white;'>80%
-                              </div>
-
-                        </div>
-
+                        <ul class="barnew">
+  <li>
+    <span style="height:75%;background: #FF0000;" title="7"><p>55%</p></span>
+  </li>
+  <li>
+    <span style="height:80%; background: #06D6A0;" title="8"><p>75%</p></span>
+  </li>
+  <li>
+    <span style="height:90%;background: #118AB2;" title="9"><p>90%</p></span>
+  </li>
+  <li>
+    <span style="height:79%;background: #FFD166;" title="10"><p>79%</p></span>
+  </li>
+  <li>
+    <span style="height:75%;background:#EF476F;" title="11"><p>75%</p></span>
+  </li>
+  <li>
+    <span style="height:87%;background:#7A5100;" title="12"><p>87%</p></span>
+  </li>
+</ul>    
                     </div>
 
                 </div>
@@ -1225,6 +1359,18 @@
                     </div>
                     </td>
                         </tr>
+                        <tr>
+                            <td>
+                            <div style="display: inline-block;padding-left: 10px;margin-left: 20px;">13</div>
+                            <div style="display: inline-block;padding-left: 10px;margin-left: 10px;">14</div>
+                            <div style="display: inline-block;padding-left: 10px;margin-left: 10px;">15</div>
+                            <div style="display: inline-block;padding-left: 10px;margin-left: 10px;">13</div>
+                            <div style="display: inline-block;padding-left: 10px;margin-left: 10px;">13</div>
+                            <div style="display: inline-block;padding-left: 10px;margin-left: 10px;">13</div>
+
+                            </td>
+                                </tr>
+
 
 
                         <tr>
@@ -1699,7 +1845,7 @@
 
                             </center>
                             <p class="margin">
-                              <strong>Description: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                              <strong>Description: </strong>The graph maps all the attributes of learning such as academic material read, knowledge feeds, and assessment through questionnaires. This is a holistic approach to quantify learning.
                           </p>
 
                     </div>
@@ -1783,16 +1929,16 @@
 
                   <table class="tg" align="center">
                     <tr style="background-color: #A4AEC1;color:white !important;height:35px;">
-                      <th style="text-align: center;">Dummy Text</th>
-                      <th style="text-align: center;">Dummy Text</th>
+                      <th style="text-align: center;">Core Technical</th>
+                      <th style="text-align: center;">Applied Enginnering</th>
                     </tr>
                     <tr style="background:#D4E7E3;">
                       <td  height="150" width="300"></td>
                       <td  height="150" width="300"></td>
                     </tr>
                     <tr style="background-color: #A4AEC1;color:white !important;height:35px;">
-                      <th style="text-align: center;">Dummy Text</th>
-                      <th style="text-align: center;">Dummy Text</th>
+                      <th style="text-align: center;">Business/Management</th>
+                      <th style="text-align: center;">Social sciences</th>
                     </tr>
                     <tr style="background:#D4E7E3;">
                       <td  height="150" width="300"></td>
@@ -1888,6 +2034,11 @@
 
                  <div class="row core-section no-page-break" >
                     <h2 class="strip">Technology Utilization Vs Semester Results <img src="https://s3.ap-south-1.amazonaws.com/frndzzy-website-new/images/White.png" align="right" style="height:35px; padding:10px;"></h2>
+                    <div class="col-md-12 margin">
+                        
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                        </div>
                         <div class="col-md-12">
 
             <center>                
@@ -1897,42 +2048,47 @@
             <rect fill="none" class="highcharts-plot-background" x="46" y="10" width="704" height="388"></rect><g class="highcharts-pane-group"></g><g class="highcharts-grid highcharts-xaxis-grid ">
                 <path fill="none" class="highcharts-grid-line" d="M 94.5 10 L 94.5 398" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 181.5 10 L 181.5 398" opacity="1"></path>
                 <path fill="none" class="highcharts-grid-line" d="M 267.5 10 L 267.5 398" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 354.5 10 L 354.5 398" opacity="1"></path>
-                <path fill="none" class="highcharts-grid-line" d="M 440.5 10 L 440.5 398" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 527.5 10 L 527.5 398" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 613.5 10 L 613.5 398" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 700.5 10 L 700.5 398" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 46 398.5 L 750 398.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 46 320.5 L 750 320.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 46 243.5 L 750 243.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 46 165.5 L 750 165.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 46 88.5 L 750 88.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 46 9.5 L 750 9.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="46" y="10" width="704" height="388"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 94.5 398 L 94.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 181.5 398 L 181.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 267.5 398 L 267.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 354.5 398 L 354.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 440.5 398 L 440.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 527.5 398 L 527.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 613.5 398 L 613.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 700.5 398 L 700.5 408" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 46 398.5 L 750 398.5"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 46 10 L 46 398"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-column-series " transform="translate(46,10) scale(1 1)" clip-path="url(#highcharts-036l777-4923)"><rect x="28.5" y="58.5" width="42" height="330" fill="#7cb5ec" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-0"></rect><rect x="114.5" y="116.5" width="42" height="272" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="201.5" y="171.5" width="42" height="217" fill="#90ed7d" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-2"></rect><rect x="287.5" y="136.5" width="42" height="252" fill="#f7a35c" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-3"></rect><rect x="373.5" y="116.5" width="42" height="272" fill="#8085e9" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-4"></rect><rect x="460.5" y="147.5" width="42" height="241" fill="#f15c80" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-5"></rect><rect x="546.5" y="85.5" width="42" height="303" fill="#e4d354" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-6"></rect><rect x="633.5" y="97.5" width="42" height="291" fill="#2b908f" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-7"></rect></g><g class="highcharts-markers highcharts-series-0 highcharts-column-series " transform="translate(46,10) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-1 highcharts-spline-series " transform="translate(46,10) scale(1 1)" clip-path="url(#highcharts-036l777-4923)"><path fill="none" d="M 49.297297297297 135.8 C 49.297297297297 135.8 101.1891891891868 225.04 135.78378378378 225.04 C 170.378378378376 225.04 187.675675675674 97 222.27027027027 97 C 256.86486486486604 97 274.162162162164 135.8 308.75675675676 135.8 C 343.351351351352 135.8 360.648648648648 77.60000000000002 395.24324324324 77.60000000000002 C 429.837837837836 77.60000000000002 447.13513513513396 97 481.72972972973 116.40000000000003 C 516.324324324326 135.79999999999998 533.6216216216241 174.6 568.21621621622 174.6 C 602.810810810812 174.6 654.7027027027 77.60000000000002 654.7027027027 77.60000000000002" class="highcharts-graph" stroke="#66bb6a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path></g><g class="highcharts-markers highcharts-series-1 highcharts-spline-series " transform="translate(46,10) scale(1 1)" clip-path="none"><path fill="#66bb6a" d="M 53 136 A 4 4 0 1 1 52.99999800000017 135.99600000066667 Z" class="highcharts-point"></path><path fill="#66bb6a" d="M 139 225 A 4 4 0 1 1 138.99999800000018 224.99600000066667 Z" class="highcharts-point"></path><path fill="#66bb6a" d="M 226 97 A 4 4 0 1 1 225.99999800000018 96.99600000066667 Z" class="highcharts-point"></path><path fill="#66bb6a" d="M 312 136 A 4 4 0 1 1 311.9999980000002 135.99600000066667 Z" class="highcharts-point"></path><path fill="#66bb6a" d="M 399 78 A 4 4 0 1 1 398.9999980000002 77.99600000066667 Z" class="highcharts-point"></path><path fill="#66bb6a" d="M 485 116 A 4 4 0 1 1 484.9999980000002 115.99600000066667 Z" class="highcharts-point"></path><path fill="#66bb6a" d="M 572 175 A 4 4 0 1 1 571.9999980000001 174.99600000066667 Z" class="highcharts-point"></path><path fill="#66bb6a" d="M 658 78 A 4 4 0 1 1 657.9999980000001 77.99600000066667 Z" class="highcharts-point"></path></g></g><text x="380" text-anchor="middle" class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text><text x="380" text-anchor="middle" class="highcharts-subtitle" style="color:#666666;fill:#666666;" y="24"></text><g class="highcharts-data-labels highcharts-series-0 highcharts-column-series " visibility="visible" transform="translate(46,10) scale(1 1)"><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 " transform="translate(38,34)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">85</tspan><tspan x="5" y="15">85</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 " transform="translate(124,92)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">70</tspan><tspan x="5" y="15">70</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-2 " transform="translate(211,147)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">56</tspan><tspan x="5" y="15">56</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-3 " transform="translate(297,112)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">65</tspan><tspan x="5" y="15">65</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-4 " transform="translate(383,92)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">70</tspan><tspan x="5" y="15">70</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-5 " transform="translate(470,123)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">62</tspan><tspan x="5" y="15">62</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-6 " transform="translate(556,61)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">78</tspan><tspan x="5" y="15">78</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-7 " transform="translate(643,73)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">75</tspan><tspan x="5" y="15">75</tspan></text></g></g><g class="highcharts-data-labels highcharts-series-1 highcharts-spline-series " visibility="visible" transform="translate(46,10) scale(1 1)"><g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(38,111)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">65</tspan><tspan x="5" y="15">65</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(124,200)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">42</tspan><tspan x="5" y="15">42</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(211,72)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">75</tspan><tspan x="5" y="15">75</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(297,111)" opacity="0" visibility="hidden"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">65</tspan><tspan x="5" y="15">65</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(383,53)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">80</tspan><tspan x="5" y="15">80</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(470,91)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">70</tspan><tspan x="5" y="15">70</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(556,150)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">55</tspan><tspan x="5" y="15">55</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(643,53)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">80</tspan><tspan x="5" y="15">80</tspan></text></g></g><g class="highcharts-legend" transform="translate(245,432)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="270" height="29" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-column-series highcharts-color-undefined highcharts-series-0" transform="translate(8,3)"><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15"><tspan>Semester</tspan></text><rect x="2" y="4" width="12" height="12" fill="#cccccc" rx="6" ry="6" class="highcharts-point"></rect></g><g class="highcharts-legend-item highcharts-spline-series highcharts-color-undefined highcharts-series-1" transform="translate(105,3)"><path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="#66bb6a" stroke-width="2"></path><path fill="#66bb6a" d="M 12 11 A 4 4 0 1 1 11.999998000000167 10.996000000666664 Z" class="highcharts-point"></path><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start"><tspan>Technology utilization</tspan></text></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="95.297297297297" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">1</text><text x="181.78378378378" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">2</text><text x="268.27027027027" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">3</text><text x="354.75675675676" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">4</text><text x="441.24324324324" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">5</text><text x="527.72972972973" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">6</text><text x="614.21621621622" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">7</text><text x="700.7027027027" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">8</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "><text x="31" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="402" opacity="1">0</text><text x="31" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="324" opacity="1">20</text><text x="31" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="247" opacity="1">40</text><text x="31" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="169" opacity="1">60</text><text x="31" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="92" opacity="1">80</text><text x="31" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="14" opacity="1">100</text></g><text x="750" class="highcharts-credits" text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;" y="471">frndzzy.com</text></svg>
+                <path fill="none" class="highcharts-grid-line" d="M 440.5 10 L 440.5 398" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 527.5 10 L 527.5 398" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 613.5 10 L 613.5 398" opacity="1"></path><path fill="none" class="highcharts-grid-line" d="M 700.5 10 L 700.5 398" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 46 398.5 L 750 398.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 46 320.5 L 750 320.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 46 243.5 L 750 243.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 46 165.5 L 750 165.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 46 88.5 L 750 88.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 46 9.5 L 750 9.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="46" y="10" width="704" height="388"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 94.5 398 L 94.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 181.5 398 L 181.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 267.5 398 L 267.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 354.5 398 L 354.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 440.5 398 L 440.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 527.5 398 L 527.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 613.5 398 L 613.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 700.5 398 L 700.5 408" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 46 398.5 L 750 398.5"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 46 10 L 46 398"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-column-series " transform="translate(46,10) scale(1 1)" clip-path="url(#highcharts-036l777-4923)"><rect x="28.5" y="58.5" width="42" height="330" fill="#7cb5ec" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-0"></rect><rect x="114.5" y="116.5" width="42" height="272" fill="#434348" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect><rect x="201.5" y="171.5" width="42" height="217" fill="#90ed7d" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-2"></rect><rect x="287.5" y="136.5" width="42" height="252" fill="#f7a35c" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-3"></rect><rect x="373.5" y="116.5" width="42" height="272" fill="#8085e9" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-4"></rect><rect x="460.5" y="147.5" width="42" height="241" fill="#f15c80" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-5"></rect><rect x="546.5" y="85.5" width="42" height="303" fill="#e4d354" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-6"></rect><rect x="633.5" y="97.5" width="42" height="291" fill="#2b908f" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-7"></rect></g><g class="highcharts-markers highcharts-series-0 highcharts-column-series " transform="translate(46,10) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-1 highcharts-spline-series " transform="translate(46,10) scale(1 1)" clip-path="url(#highcharts-036l777-4923)"><path fill="none" d="M 49.297297297297 135.8 C 49.297297297297 135.8 101.1891891891868 225.04 135.78378378378 225.04 C 170.378378378376 225.04 187.675675675674 97 222.27027027027 97 C 256.86486486486604 97 274.162162162164 135.8 308.75675675676 135.8 C 343.351351351352 135.8 360.648648648648 77.60000000000002 395.24324324324 77.60000000000002 C 429.837837837836 77.60000000000002 447.13513513513396 97 481.72972972973 116.40000000000003 C 516.324324324326 135.79999999999998 533.6216216216241 174.6 568.21621621622 174.6 C 602.810810810812 174.6 654.7027027027 77.60000000000002 654.7027027027 77.60000000000002" class="highcharts-graph" stroke="#66bb6a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path></g><g class="highcharts-markers highcharts-series-1 highcharts-spline-series " transform="translate(46,10) scale(1 1)" clip-path="none"><path fill="#66bb6a" d="M 53 136 A 4 4 0 1 1 52.99999800000017 135.99600000066667 Z" class="highcharts-point"></path><path fill="#66bb6a" d="M 139 225 A 4 4 0 1 1 138.99999800000018 224.99600000066667 Z" class="highcharts-point"></path><path fill="#66bb6a" d="M 226 97 A 4 4 0 1 1 225.99999800000018 96.99600000066667 Z" class="highcharts-point"></path><path fill="#66bb6a" d="M 312 136 A 4 4 0 1 1 311.9999980000002 135.99600000066667 Z" class="highcharts-point"></path><path fill="#66bb6a" d="M 399 78 A 4 4 0 1 1 398.9999980000002 77.99600000066667 Z" class="highcharts-point"></path><path fill="#66bb6a" d="M 485 116 A 4 4 0 1 1 484.9999980000002 115.99600000066667 Z" class="highcharts-point"></path><path fill="#66bb6a" d="M 572 175 A 4 4 0 1 1 571.9999980000001 174.99600000066667 Z" class="highcharts-point"></path><path fill="#66bb6a" d="M 658 78 A 4 4 0 1 1 657.9999980000001 77.99600000066667 Z" class="highcharts-point"></path></g></g><text x="380" text-anchor="middle" class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text><text x="380" text-anchor="middle" class="highcharts-subtitle" style="color:#666666;fill:#666666;" y="24"></text><g class="highcharts-data-labels highcharts-series-0 highcharts-column-series " visibility="visible" transform="translate(46,10) scale(1 1)"><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 " transform="translate(38,34)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">85</tspan><tspan x="5" y="15">85</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 " transform="translate(124,92)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">70</tspan><tspan x="5" y="15">70</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-2 " transform="translate(211,147)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">56</tspan><tspan x="5" y="15">56</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-3 " transform="translate(297,112)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">65</tspan><tspan x="5" y="15">65</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-4 " transform="translate(383,92)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">70</tspan><tspan x="5" y="15">70</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-5 " transform="translate(470,123)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">62</tspan><tspan x="5" y="15">62</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-6 " transform="translate(556,61)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">78</tspan><tspan x="5" y="15">78</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-7 " transform="translate(643,73)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">75</tspan><tspan x="5" y="15">75</tspan></text></g></g>
+                <g class="highcharts-data-labels highcharts-series-1 highcharts-spline-series " visibility="visible" transform="translate(46,10) scale(1 1)">
+                    <g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(38,111)">
+                        <text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15">
+                            <tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">65</tspan>
+                            <tspan x="5" y="15">65</tspan></text></g>
+                            <g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(124,200)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">42</tspan><tspan x="5" y="15">42</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(211,72)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">75</tspan><tspan x="5" y="15">75</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(297,111)" opacity="0" visibility="hidden"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">65</tspan><tspan x="5" y="15">65</tspan></text></g>
+                            <g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(383,53)">
+                                <text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">80</tspan>
+                                <tspan x="5" y="15">80</tspan></text></g>
+                            <g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(470,91)">
+                                <text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15">
+                                <tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">70</tspan>
+                                <tspan x="5" y="15">70</tspan></text></g>
+                                <g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(556,150)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15">
+                                <tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">55</tspan>
+                                <tspan x="5" y="15">55</tspan></text></g>
+                            <g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(643,53)"><text x="5" style="font-size:10px;font-weight:bold;color:#000000;fill:#000000;" y="15">
+                                <tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">80</tspan><tspan x="5" y="15">80</tspan></text></g></g>
+
+
+
+
+                            <g class="highcharts-legend" transform="translate(245,432)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="270" height="29" visibility="visible"></rect>
+                                <g><g><g class="highcharts-legend-item highcharts-column-series highcharts-color-undefined highcharts-series-0" transform="translate(8,3)">
+                                    <text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15"><tspan>Semester</tspan></text>
+                                <rect x="2" y="4" width="12" height="12" fill="#cccccc" rx="6" ry="6" class="highcharts-point"></rect></g>
+                                <g class="highcharts-legend-item highcharts-spline-series highcharts-color-undefined highcharts-series-1" transform="translate(105,3)"><path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="#66bb6a" stroke-width="2"></path>
+                                    <path fill="#66bb6a" d="M 12 11 A 4 4 0 1 1 11.999998000000167 10.996000000666664 Z" class="highcharts-point"></path>
+                                    <text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start"><tspan>Technology utilization</tspan></text></g></g></g></g>
+                <g class="highcharts-axis-labels highcharts-xaxis-labels ">
+                    <text x="95.297297297297" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">1</text><text x="181.78378378378" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">2</text><text x="268.27027027027" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">3</text><text x="354.75675675676" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">4</text><text x="441.24324324324" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">5</text><text x="527.72972972973" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">6</text><text x="614.21621621622" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">7</text><text x="700.7027027027" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">8</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "><text x="31" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="402" opacity="1">0</text><text x="31" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="324" opacity="1">20</text><text x="31" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="247" opacity="1">40</text><text x="31" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="169" opacity="1">60</text><text x="31" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="92" opacity="1">80</text><text x="31" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="14" opacity="1">100</text></g><text x="750" class="highcharts-credits" text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;" y="471">frndzzy.com</text></svg>
             </center>
         <hr>
         
-
-            <div class="col-md-12">
-                    <h3>Scope of Improvement</h3></br>
-<center>
-                        <svg width="700" height="406" viewBox="0 0 760 476"><defs>
-                        <clipPath><rect x="0" y="0" width="711" height="388" fill="none"></rect></clipPath>
-                        <clipPath><rect x="0" y="0" width="711" height="388" fill="none"></rect></clipPath></defs>
-                        <rect fill="none" class="highcharts-background" x="0" y="0" width="760" height="476" rx="0" ry="0"></rect>
-                        <rect fill="none" class="highcharts-plot-background" x="39" y="10" width="711" height="388"></rect><g class="highcharts-pane-group"></g>
-                        <g class="highcharts-grid highcharts-xaxis-grid "><path fill="none"  d="M 45.5 10 L 45.5 398" opacity="1"></path>
-                        <path fill="none"  d="M 145.5 10 L 145.5 398" opacity="1"></path>
-                        <path fill="none"  d="M 244.5 10 L 244.5 398" opacity="1"></path>
-                        <path fill="none"  d="M 344.5 10 L 344.5 398" opacity="1"></path>
-                        <path fill="none"  d="M 443.5 10 L 443.5 398" opacity="1"></path>
-                        <path fill="none"  d="M 543.5 10 L 543.5 398" opacity="1"></path>
-
-                        <path fill="none"  d="M 642.5 10 L 642.5 398" opacity="1"></path>
-                        <path fill="none"  d="M 742.5 10 L 742.5 398" opacity="1"></path></g>
-                        <g class="highcharts-grid highcharts-yaxis-grid ">
-                            <path fill="none" stroke="#e6e6e6" stroke-width="1"  d="M 39 398.5 L 750 398.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1"  d="M 39 350.5 L 750 350.5" opacity="1"></path>
-                            <path fill="none" stroke="#e6e6e6" stroke-width="1"  d="M 39 301.5 L 750 301.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1"  d="M 39 253.5 L 750 253.5" opacity="1"></path>
-                            <path fill="none" stroke="#e6e6e6" stroke-width="1"  d="M 39 204.5 L 750 204.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1"  d="M 39 156.5 L 750 156.5" opacity="1"></path>
-                            <path fill="none" stroke="#e6e6e6" stroke-width="1"  d="M 39 107.5 L 750 107.5" opacity="1"></path><path fill="none" stroke="#e6e6e6" stroke-width="1"  d="M 39 59.5 L 750 59.5" opacity="1"></path>
-                            <path fill="none" stroke="#e6e6e6" stroke-width="1"  d="M 39 9.5 L 750 9.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="39" y="10" width="711" height="388"></rect>
-                            <g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 45.5 398 L 45.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 145.5 398 L 145.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 244.5 398 L 244.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 344.5 398 L 344.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 443.5 398 L 443.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 543.5 398 L 543.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 642.5 398 L 642.5 408" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#ccd6eb" stroke-width="1" d="M 742.5 398 L 742.5 408" opacity="1"></path><path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" d="M 39 398.5 L 750 398.5"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-axis-line" d="M 39 10 L 39 398"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-spline-series highcharts-color-0 " transform="translate(39,10) scale(1 1)" clip-path="url(#highcharts-036l777-4369)"><path fill="none" d="M 6.9705882352941 339.5 C 6.9705882352941 339.5 66.71848739495964 281.3000000000012 106.55042016807 242.5 C 146.382352941178 203.70000000000115 166.298319327732 145.50000000000003 206.13025210084 145.50000000000003 C 245.962184873948 145.50000000000003 265.878151260502 218.25 305.71008403361 218.25 C 345.542016806722 218.25 365.457983193278 112.52000000000203 405.28991596639 72.75 C 445.121848739498 32.98000000000205 465.037815126052 19.400000000000034 504.86974789916 19.400000000000034 C 544.701680672268 19.400000000000034 564.6176470588221 163.9300000000028 604.44957983193 218.25 C 644.281512605042 272.5700000000028 704.02941176471 291 704.02941176471 291" class="highcharts-graph" stroke="#7cb5ec" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path></g><g class="highcharts-markers highcharts-series-0 highcharts-spline-series highcharts-color-0 " transform="translate(39,10) scale(1 1)" clip-path="none"><path fill="#7cb5ec" d="M 10 340 A 4 4 0 1 1 9.999998000000167 339.99600000066664 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 110 243 A 4 4 0 1 1 109.99999800000016 242.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 210 146 A 4 4 0 1 1 209.99999800000018 145.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 309 218 A 4 4 0 1 1 308.9999980000002 217.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 409 73 A 4 4 0 1 1 408.9999980000002 72.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 508 19 A 4 4 0 1 1 507.9999980000002 18.996000000666665 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 608 218 A 4 4 0 1 1 607.9999980000001 217.99600000066667 Z" class="highcharts-point highcharts-color-0"></path><path fill="#7cb5ec" d="M 708 291 A 4 4 0 1 1 707.9999980000001 290.99600000066664 Z" class="highcharts-point highcharts-color-0"></path></g><g class="highcharts-series highcharts-series-1 highcharts-spline-series highcharts-color-1 " transform="translate(39,10) scale(1 1)" clip-path="url(#highcharts-036l777-4369)"><path fill="none" d="M 6.9705882352941 164.9 C 6.9705882352941 164.9 66.71848739495964 116.40000000000003 106.55042016807 116.40000000000003 C 146.382352941178 116.40000000000003 166.298319327732 169.75000000000003 206.13025210084 169.75000000000003 C 245.962184873948 169.75000000000003 265.878151260502 101.8499999999985 305.71008403361 72.75 C 345.542016806722 43.649999999998506 365.457983193278 24.25 405.28991596639 24.25 C 445.121848739498 24.25 465.037815126052 77.60000000000001 504.86974789916 97 C 544.701680672268 116.4 564.6176470588221 106.70000000000074 604.44957983193 121.25 C 644.281512605042 135.80000000000075 704.02941176471 169.75000000000003 704.02941176471 169.75000000000003" class="highcharts-graph" stroke="#434348" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path></g><g class="highcharts-markers highcharts-series-1 highcharts-spline-series highcharts-color-1 " transform="translate(39,10) scale(1 1)" clip-path="none"><path fill="#434348" d="M 6 161 L 10 165 6 169 2 165 Z" class="highcharts-point highcharts-color-1"></path><path fill="#434348" d="M 106 112 L 110 116 106 120 102 116 Z" class="highcharts-point highcharts-color-1"></path><path fill="#434348" d="M 206 166 L 210 170 206 174 202 170 Z" class="highcharts-point highcharts-color-1"></path><path fill="#434348" d="M 305 69 L 309 73 305 77 301 73 Z" class="highcharts-point highcharts-color-1"></path><path fill="#434348" d="M 405 20 L 409 24 405 28 401 24 Z" class="highcharts-point highcharts-color-1"></path><path fill="#434348" d="M 504 93 L 508 97 504 101 500 97 Z" class="highcharts-point highcharts-color-1"></path><path fill="#434348" d="M 604 117 L 608 121 604 125 600 121 Z" class="highcharts-point highcharts-color-1"></path><path fill="#434348" d="M 704 166 L 708 170 704 174 700 170 Z" class="highcharts-point highcharts-color-1"></path></g></g><text x="380" text-anchor="middle" class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24">Technology Utilization</text><text x="380" text-anchor="middle" class="highcharts-subtitle" style="color:#666666;fill:#666666;" y="24"></text><g class="highcharts-data-labels highcharts-series-0 highcharts-spline-series highcharts-color-0 " visibility="visible" transform="translate(39,10) scale(1 1)"><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 " transform="translate(-4,315)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">20</tspan><tspan x="5" y="15">20</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 " transform="translate(95,218)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">40</tspan><tspan x="5" y="15">40</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 " transform="translate(195,121)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">60</tspan><tspan x="5" y="15">60</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 " transform="translate(294,193)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">45</tspan><tspan x="5" y="15">45</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 " transform="translate(394,48)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">75</tspan><tspan x="5" y="15">75</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 " transform="translate(494,19)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">86</tspan><tspan x="5" y="15">86</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 " transform="translate(593,193)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">45</tspan><tspan x="5" y="15">45</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-0 " transform="translate(693,266)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">30</tspan><tspan x="5" y="15">30</tspan></text></g></g><g class="highcharts-data-labels highcharts-series-1 highcharts-spline-series highcharts-color-1 " visibility="visible" transform="translate(39,10) scale(1 1)"><g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 " transform="translate(-4,140)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">56</tspan><tspan x="5" y="15">56</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 " transform="translate(95,91)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">66</tspan><tspan x="5" y="15">66</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 " transform="translate(195,145)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">55</tspan><tspan x="5" y="15">55</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 " transform="translate(294,48)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">75</tspan><tspan x="5" y="15">75</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 " transform="translate(394,-1)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">85</tspan><tspan x="5" y="15">85</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 " transform="translate(494,72)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">70</tspan><tspan x="5" y="15">70</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 " transform="translate(593,96)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">65</tspan><tspan x="5" y="15">65</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-1 " transform="translate(693,145)"><text x="5" style="font-size:10px;font-weight:;color:#000000;fill:#000000;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">55</tspan><tspan x="5" y="15">55</tspan></text></g></g><g class="highcharts-legend" transform="translate(264,432)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="231" height="29" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-spline-series highcharts-color-0 highcharts-series-0" transform="translate(8,3)"><path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="#7cb5ec" stroke-width="2"></path><path fill="#7cb5ec" d="M 12 11 A 4 4 0 1 1 11.999998000000167 10.996000000666664 Z" class="highcharts-point"></path><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15"><tspan>Your score</tspan></text></g><g class="highcharts-legend-item highcharts-spline-series highcharts-color-1 highcharts-series-1" transform="translate(115.46875,3)"><path fill="none" d="M 0 11 L 16 11" class="highcharts-graph" stroke="#434348" stroke-width="2"></path><path fill="#434348" d="M 8 7 L 12 11 8 15 4 11 Z" class="highcharts-point"></path><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start"><tspan>Average score</tspan></text></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="45.970588235294" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">1</text><text x="145.55042016807" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">2</text><text x="245.13025210084" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">3</text><text x="344.71008403361" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">4</text><text x="444.28991596639" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">5</text><text x="543.86974789916" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">6</text><text x="643.44957983193" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">7</text><text x="743.02941176471" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="middle" transform="translate(0,0)" y="417" opacity="1">8</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="402" opacity="1">10</text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="354" opacity="1">20</text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="305" opacity="1">30</text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="257" opacity="1">40</text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="208" opacity="1">50</text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="160" opacity="1">60</text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="111" opacity="1">70</text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="63" opacity="1">80</text><text x="24" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="14" opacity="1">90</text></g><text x="750" class="highcharts-credits" text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;" y="471">frndzzy.com</text></svg>
-
-                    </center>
-                    <hr>
-
-
-
-                 </div>
+<div class="col-md-12 margin">
+                        
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                        </div>
+            
 
 
         <div class="row core-section no-page-break" >
@@ -1956,20 +2112,47 @@
                 <h3 align="center">Market Fit</h3>
 
         <center>
-        <svg width="650" height="200">
-
-        <rect x="20" y="20" width="600" rx="5" ry="5" height="400"        style="fill: #fff000; fill-opacity: 0.5;"
-            />
-            <text x="40" y="30" transform="rotate(90,10,20)">Dummy text</text>
-            <text x="290" y="10" transform="rotate(0,10,20)">Technology</text>
-            <text x="40" y="-600" transform="rotate(90,10,20)">Dummy text</text>
-
-    <rect x="60" y="50" width="400" rx="5" ry="5" height="75" style="stroke: #000099; fill: #3333ff; fill-opacity: 0.5;"/>
-            <text x="290" y="10" transform="rotate(-90,10,20)">Dummy text</text>
-        </svg><br>
-        <svg width="600">
-        <text x="250" y="10" transform="rotate(0,10,20)">Dummy text</text>
-        </svg>
+        <svg width="522" height="400" viewBox="0 0 522 400"><defs>
+            <clipPath id="highcharts-036l777-6856"><rect x="0" y="0" width="502" height="334" fill="none"></rect></clipPath>
+            <clipPath id="highcharts-036l777-6858"><circle cx="251" cy="167" r="141.95"></circle></clipPath></defs>
+            <rect fill="#ffffff" class="highcharts-background" x="0" y="0" width="522" height="400" rx="0" ry="0"></rect>
+            <rect fill="none" class="highcharts-plot-background" x="10" y="10" width="502" height="334"></rect>
+            <g class="highcharts-pane-group"></g>
+            <g class="highcharts-grid highcharts-xaxis-grid ">
+                <path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 261 177 L 361.3738075894304 76.6261924105696" opacity="1"></path>
+                <path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 261 177 L 361.3738075894304 277.3738075894304" opacity="1"></path>
+                <path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 261 177 L 160.62619241056962 277.3738075894304" opacity="1"></path>
+                <path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 261 177 L 160.62619241056956 76.6261924105696" opacity="1"></path>
+                <path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 261 177 L 361.3738075894304 76.62619241056956" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid ">
+                    <path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 261 177 L 261 177 L 261 177 L 261 177 L 261 177 L 261 177" opacity="1"></path>
+                    <path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 311.1869037947152 126.81309620528481 L 311.1869037947152 126.81309620528478 L 210.81309620528478 126.81309620528481 L 210.8130962052848 227.1869037947152 L 311.1869037947152 227.1869037947152 L 311.1869037947152 126.81309620528481" opacity="1"></path>
+                    <path fill="none" stroke="#e6e6e6" stroke-width="1" class="highcharts-grid-line" d="M 361.3738075894304 76.6261924105696 L 361.3738075894304 76.62619241056956 L 160.62619241056956 76.6261924105696 L 160.62619241056962 277.3738075894304 L 361.3738075894304 277.3738075894304 L 361.3738075894304 76.6261924105696" opacity="1"></path></g>
+                    <rect fill="none" class="highcharts-plot-border" x="10" y="10" width="502" height="334"></rect>
+                    <g class="highcharts-axis highcharts-xaxis ">
+                        <path fill="none" class="highcharts-axis-line" d="M 261 35.05000000000001 A 141.95 141.95 0 1 1 260.8580500236583 35.0500709749941 M 261 177 A 0 0 0 1 0 261 177 "></path></g>
+                        <g class="highcharts-axis highcharts-yaxis ">
+                            <path fill="none" class="highcharts-axis-line" d="M 261 177 L 261 35.05000000000001"></path></g>
+                            <g class="highcharts-series-group">
+                                <g class="highcharts-series highcharts-series-0 highcharts-area-series " transform="translate(10,10) scale(1 1)" clip-path="url(#highcharts-036l777-6858)">
+                                    <path fill="rgb(130,177,255)" fill-opacity="0.75" d="M 301.1869037947153 116.8130962052849 L 326.2803556920762 242.28035569206946 L 170.700953928459 247.29904607154765 L 190.77571544633943 106.77571544634407 L 301.1869037947153 116.8130962052849 L 251 167 L 251 167 L 251 167 L 251 167 L 251 167" class="highcharts-area"></path>
+                                    <path fill="none" d="M 301.1869037947153 116.8130962052849 L 326.2803556920762 242.28035569206946 L 170.700953928459 247.29904607154765 L 190.77571544633943 106.77571544634407 L 301.1869037947153 116.8130962052849" class="highcharts-graph" stroke="#82b1ff" stroke-width="2" stroke-dasharray="none"></path></g>
+                                    <g class="highcharts-markers highcharts-series-0 highcharts-area-series " transform="translate(10,10) scale(1 1)" clip-path="none">
+                                        <path fill="#82b1ff" d="M 297 113 L 305 113 301 121 Z" class="highcharts-point"></path>
+                                        <path fill="#82b1ff" d="M 322 238 L 330 238 326 246 Z" class="highcharts-point"></path>
+                                        <path fill="#82b1ff" d="M 166 243 L 174 243 170 251 Z" class="highcharts-point"></path>
+                                        <path fill="#82b1ff" d="M 186 103 L 194 103 190 111 Z" class="highcharts-point"></path></g></g>
+                                        <text x="261" text-anchor="middle" class="highcharts-title" style="color:#333333;font-size:18px;fill:#333333;" y="24"></text>
+                                        <text x="261" text-anchor="middle" class="highcharts-subtitle" style="color:#666666;fill:#666666;" y="24"></text>
+                                        <g class="highcharts-data-labels highcharts-series-0 highcharts-area-series " visibility="visible" transform="translate(10,10) scale(1 1)">
+                                            <g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(289,92)">
+                                                <text x="5" style="font-size:10px;font-weight:bold;color:#0097a7;fill:#0097a7;" y="15">
+                                                    <tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round" style="">50</tspan>
+                                                    <tspan x="5" y="15">50</tspan></text></g>
+                                                    <g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(314,217)">
+                                                        <text x="5" style="font-size:10px;font-weight:bold;color:#0097a7;fill:#0097a7;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">75</tspan>
+                                                            <tspan x="5" y="15">75</tspan></text></g>
+                                                            <g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(159,222)">
+                                                                <text x="5" style="font-size:10px;font-weight:bold;color:#0097a7;fill:#0097a7;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">80</tspan><tspan x="5" y="15">80</tspan></text></g><g class="highcharts-label highcharts-data-label highcharts-data-label-color-undefined " transform="translate(179,82)"><text x="5" style="font-size:10px;font-weight:bold;color:#0097a7;fill:#0097a7;" y="15"><tspan x="5" y="15" class="highcharts-text-outline" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2px" stroke-linejoin="round">60</tspan><tspan x="5" y="15">60</tspan></text></g></g><g class="highcharts-legend" transform="translate(216,356)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="89" height="29" visibility="visible"></rect><g><g><g class="highcharts-legend-item highcharts-area-series highcharts-color-undefined highcharts-series-0" transform="translate(8,3)"><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15"><tspan>Learning</tspan></text><rect x="2" y="4" width="12" height="12" fill="#82b1ff" rx="6" ry="6" class="highcharts-point"></rect></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="371.9804093072286" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" transform="translate(0,0)" text-anchor="start" y="70.01959069277139" opacity="1">Learning</text><text x="371.9804093072286" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" transform="translate(0,0)" text-anchor="start" y="291.9804093072286" opacity="1"><tspan>Technology Utilization</tspan></text><text x="150.01959069277137" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" transform="translate(0,0)" text-anchor="end" y="291.9804093072286" opacity="1">Academics</text><text x="150.01959069277135" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" transform="translate(0,0)" text-anchor="end" y="70.01959069277139" opacity="1"><tspan>Emotional Quotient</tspan></text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" transform="translate(0,0)" text-anchor="start" y="-9999">4</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "><text x="258" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="175" opacity="1">0</text><text x="258" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="104.025" opacity="1">50</text><text x="0" style="color:#666666;cursor:default;font-size:11px;fill:#666666;" text-anchor="end" transform="translate(0,0)" y="-9999">100</text></g><text x="512" class="highcharts-credits" text-anchor="end" style="cursor:pointer;color:#999999;font-size:9px;fill:#999999;" y="395">frndzzy.com</text></svg>
     </center>
         </div>
 
