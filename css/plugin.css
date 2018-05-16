@@ -1184,7 +1184,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 h1 small,
@@ -1227,6 +1227,7 @@ h6 .small,
 h1,
 .h1 {
   font-size: 36px;
+  margin-top:50px;
 }
 h2,
 .h2 {
@@ -1375,15 +1376,15 @@ a.bg-danger:focus {
   border-bottom: 1px solid #eee;
 }
 ul,
-ol {
+li {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 ul ul,
 ol ul,
 ul ol,
 ol ol {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .list-unstyled {
   padding-left: 0;
